@@ -1,11 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FRI Data Science_report LaTeX Template
 % Version 1.0 (28/1/2020)
-% 
+%
 % Jure Demšar (jure.demsar@fri.uni-lj.si)
 %
 % Based on MicromouseSymp article template by:
-% Mathias Legrand (legrand.mathias@gmail.com) 
+% Mathias Legrand (legrand.mathias@gmail.com)
 % With extensive modifications by:
 % Antonio Valente (antonio.luis.valente@gmail.com)
 %
@@ -20,6 +20,8 @@
 %----------------------------------------------------------------------------------------
 \documentclass[fleqn,moreauthors,10pt]{ds_report}
 \usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{enumitem}
 
 \graphicspath{{fig/}}
 
@@ -31,23 +33,25 @@
 %----------------------------------------------------------------------------------------
 
 % Header
-\JournalInfo{FRI Natural language processing course 2021}
+\JournalInfo{FRI Natural language processing course 2026}
 
 % Interim or final report
-\Archive{Project report} 
-%\Archive{Final report} 
+\Archive{Project report}
+%\Archive{Final report}
 
 % Article title
-\PaperTitle{Natural language processing course Latex Template} 
+\PaperTitle{
+FRI ReferatBot – Domain-Specific assistant for UL FRI Student Affairs Office
+}
 
 % Authors (student competitors) and their info
-\Authors{John Doe, Jane Doe, and Mike Smith}
+\Authors{Gašper Kolbezen, Samo Hribar and Gašper Suhadolnik}
 
 % Advisors
 \affiliation{\textit{Advisors: Slavko Žitnik}}
 
 % Keywords
-\Keywords{Keyword1, Keyword2, Keyword3 ...}
+\Keywords{Retrieval-Augmented Generation, Large Language Models, Domain-Specific Chatbot, Student Affairs, Slovenian NLP}
 \newcommand{\keywordname}{Keywords}
 
 
@@ -56,7 +60,17 @@
 %----------------------------------------------------------------------------------------
 
 \Abstract{
-The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here.
+General-purpose Large Language Models (LLMs) are highly capable at open-domain conversation,
+but they frequently hallucinate when asked institution-specific questions they were not trained on.
+This project addresses that limitation by building a domain-specific conversational assistant
+for the Student Affairs Office (slo., Referat) of the Faculty of Computer and Information Science
+at the University of Ljubljana.
+The assistant will serve the faculty's enrolled students by answering questions about enrolment procedures,
+exam regulations, thesis submission, student status, fees, and related administrative topics.
+We plan to implement a Retrieval-Augmented Generation (RAG) pipeline grounded in a curated corpus of
+UL FRI web pages, official study regulations, and FAQ documents.
+This report covers the project motivation, a survey of related work,
+an overview of our planned methodology, and a description of the proposed corpus.
 }
 
 %----------------------------------------------------------------------------------------
@@ -64,23 +78,55 @@ The abstract goes here. The abstract goes here. The abstract goes here. The abst
 \begin{document}
 
 % Makes all text pages the same height
-\flushbottom 
+\flushbottom
 
 % Print the title and abstract box
 \maketitle 
 
 % Removes page numbering from the first page
-\thispagestyle{empty} 
+\thispagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
 \section*{Introduction}
-	These latex files are intended to serve as a the template for the NLP course at FRI.  The template is adapted from the FRI Data Science Project Competition. template  If you find mistakes in the template or have problems using it, please consult Jure Demšar (\href{mailto:jure.demsar@fri.uni-lj.si}{jure.demsar@fri.uni-lj.si}).
-	
-	In the Introduction section you should write about the relevance of your work (what is the purpose of the project, what will we solve) and about related work (what solutions for the problem already exist). Where appropriate, reference scientific work conducted by other researchers. For example, the work done by Demšar et al. \cite{Demsar2016BalancedMixture} is very important for our project. The abbreviation et al. is for et alia, which in latin means and others, we use this abbreviation when there are more than two authors of the work we are citing. If there are two authors (or if there is a single author) we just write down their surnames. For example, the work done by Demšar and Lebar Bajec \cite{Demsar2017LinguisticEvolution} is also important for successful completion of our project.
+%These latex files are intended to serve as a the template for the NLP course at FRI.
+% The template is adapted from the FRI Data Science Project Competition template.
+% If you find mistakes in the template or have problems using it, please consult
+% Jure Demšar (\href{mailto:jure.demsar@fri.uni-lj.si}{jure.demsar@fri.uni-lj.si}).
 
+%In the Introduction section you should write about the relevance of your work
+% (what is the purpose of the project, what will we solve)
+% and about related work (what solutions for the problem already exist).
+% Where appropriate, reference scientific work conducted by other researchers.
+% For example, the work done by Demšar et al. \cite{Demsar2016BalancedMixture}
+% is very important for our project.
+% The abbreviation et al. is for et alia, which in latin means and others,
+% we use this abbreviation when there are more than two authors of the work we are citing.
+% If there are two authors (or if there is a single author) we just write down their surnames.
+%
+% For example, the work done by Demšar and Lebar Bajec \cite{Demsar2017LinguisticEvolution}
+% is also important for successful completion of our project.
+
+% samo:
+Students at university faculties routinely encounter administrative questions:
+How do I enrol in the next academic year? How many times can I take an exam?
+What happens if I miss the enrolment deadline
+What documents do I need to submit my thesis?
+These questions are answered on the UL FRI website and in official study regulations,
+yet students frequently contact the Student Affairs Office (Referat) by email or in person
+for answers that are already publicly accessible.
+This imposes a significant workload on administrative staff and introduces delays for students.
+
+General-purpose LLMs such as GPT-5 or Llama 3 cannot reliably answer these questions: UL FRI-specific rules (e.g., the precise ECTS thresholds for year advancement, the five-attempt exam policy, the Year Plus module for foreign students) are not part of their training data, and the models hallucinate plausible-sounding but incorrect answers. The goal of this project is to close that gap by building a specialised assistant that retrieves factual information from a verified, institution-specific knowledge base before generating a response.
+
+Our target domain is the UL FRI Student Affairs Office.
+The closest existing analogue within the University of Ljubljana is the AI student assistant
+deployed on the Faculty of Mechanical Engineering (UL FS) website,
+which is embedded as a live chat widget under the title ``AI pomoč za študente UL FS''.
+Our system aims to replicate and extend this concept for UL FRI,
+with a systematic evaluation framework and reproducible code.
 
 %------------------------------------------------
 
