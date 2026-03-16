@@ -136,3 +136,6 @@ dmypy.json
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# other
+other/
