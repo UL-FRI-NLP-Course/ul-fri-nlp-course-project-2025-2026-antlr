@@ -134,6 +134,16 @@ which is embedded as a live chat widget under the title ``AI pomoč za študente
 Our system aims to replicate and extend this concept for UL FRI,
 with a systematic evaluation framework and reproducible code.
 
+%gasperk
+To create our dataset, we will gather data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
+We will use Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will poll students to collect a set of real queries.
+
+The core implementation will include a Retrieval-Augmented Generation (RAG) architecture. We propose using the Slovenian GaMS model to process user intents and generate answers. 
+For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings, and store them in PostgreSQL using the pgvector extension. 
+
+To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona. 
+We will set guardrails so the system refuses to answer out-of-domain questions and handles unanswerable queries by directing the user to the student affairs office.
+Finally, we will evaluate the system using automated retrieval metrics and human testing on our polled dataset.
 %------------------------------------------------
 
 \section*{Methods}
