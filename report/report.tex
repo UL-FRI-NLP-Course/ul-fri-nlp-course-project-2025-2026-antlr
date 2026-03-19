@@ -138,7 +138,7 @@ with a systematic evaluation framework and reproducible code.
 To create our dataset, we will gather data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
 We will use Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will poll students to collect a set of real queries.
 
-The core implementation will include a Retrieval-Augmented Generation (RAG) architecture. We propose using the Slovenian GaMS model to process user intents and generate answers. 
+The core implementation will include a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We propose using the Slovenian GaMS model to process user intents and generate answers. 
 For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings, and store them in PostgreSQL using the pgvector extension. 
 
 To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona. 
@@ -148,23 +148,23 @@ Finally, we will evaluate the system using automated retrieval metrics and human
 %gaspers
 \section*{Related Work}
 \subsection{Domain-specific Knowledge Incorporation}
-Incorporating domain-specific knowledge into LLMs is done through the following main approaches: prompt engineering, retrieval-augmented generation (RAG), and fine-tuning.
+Incorporating domain-specific knowledge into LLMs is done through the following main approaches: prompt engineering, retrieval-augmented generation (RAG) \cite{lewis2020retrieval}, and fine-tuning.
 Prompt engineering is the fastest and cheapest method, where carefully designed prompts provide the model with additional knowledge at runtime. While this technique is fast and quick to set up, it offers limited depth and accuracy in some cases, including domain tasks.
 
-RAG solves this issue by connecting the model to external knowledge sources, improving accuracy and transparency, though at the cost of added system complexity and latency. Knowledge is obtained from internal documents, websites, PDFs, company databases etc. and is typically stored in some vector database, such as FAISS, Pinecone, Weaviate, etc. During inference, relevant documents are first retrieved from the database based on user prompt using vector search, and are then passed on to the underlying LLM, which generates the answer.
+RAG \cite{lewis2020retrieval} solves this issue by connecting the model to external knowledge sources, improving accuracy and transparency, though at the cost of added system complexity and latency. Knowledge is obtained from internal documents, websites, PDFs, company databases etc. and is typically stored in some vector database, such as FAISS, Pinecone, Weaviate, etc. During inference, relevant documents are first retrieved from the database based on user prompt using vector search, and are then passed on to the underlying LLM, which generates the answer.
 
 Fine-tuning embeds domain expertise directly into the model, delivering high performance and consistency for specialized tasks, but requires significant data, time, and ongoing maintenance. It is also harder to update or add new knowledge, which is done by additional fine-tuning of the model.
 
-In practice, these methods are often combined, with RAG providing dynamic knowledge, fine-tuning ensuring consistent behavior, and prompting orchestrating interactions.
+In practice, these methods are often combined, with RAG \cite{lewis2020retrieval} providing dynamic knowledge, fine-tuning ensuring consistent behavior, and prompting orchestrating interactions.
 
 \subsection{Existing Solutions}
 There are many existing university chatbot solutions using RAG architecture that differ in used technologies and purpose.
-One example of such system is a chatbot developed for Misissippi state university by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by retriever technique provided by LangChain [] using Maximum Marginal Relevancy and Similarity Search methods. For the underlyign LLM, it utilizes OpenAi's gpt-3.5-turbo []. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
+One example of such system is a chatbot developed for Misissippi state university by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by retriever technique provided by LangChain \cite{langChain} using Maximum Marginal Relevancy and Similarity Search methods. For the underlyign LLM, it utilizes OpenAi's gpt-3.5-turbo. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
 
-Other examples of such chatbots are Meri AI[] and AceIt-ECE-Capstone[]. Meri AI [] is a campus intelligence system, which runs a LangGraph workflow [] for intent classification, route detection, context retrieval, and response generation. It uses Supabase PostgreSQL with pgvector as knowledge database containing content scraped from university resources.
-AceIt-ECE-Capstone [] is a course assistant focused on study help. It uses RAG pipeline where course data is embedded with Amazon Titan Text Embeddings v2[] and stored in Amazon RDS PostgreSQL[]. It uses Llama 3.3 [] to generate responses based on user query and retrieved database knowledge.
+Other examples of such chatbots are Meri AI \cite{meriAi} and AceIt-ECE-Capstone \cite{aceIt}. Meri AI \cite{meriAi} is a campus intelligence system, which runs a LangGraph workflow \cite{langChain} for intent classification, route detection, context retrieval, and response generation. It uses Supabase PostgreSQL with pgvector as knowledge database containing content scraped from university resources.
+AceIt-ECE-Capstone \cite{aceIt} is a course assistant focused on study help. It uses RAG \cite{lewis2020retrieval} pipeline where course data is embedded with Amazon Titan Text Embeddings v2 and stored in Amazon RDS PostgreSQL. It uses Llama 3.3 to generate responses based on user query and retrieved database knowledge.
 
-Another example of university chatbot is a virtual AI assistant developed by fakulteta za strojništvo of University of Ljubljana, which is accessible at []. Unfortunately, it seems that there is no publicly available information about its architecture and even when asked, assistant was unable to answer it accurately. It was, however, able to explain that the data used to provide user query with relevant context comes from UL FS webpage and standard Q\&A entries.
+Another example of university chatbot is a virtual AI assistant developed by fakulteta za strojništvo of University of Ljubljana. Unfortunately, it seems that there is no publicly available information about its architecture and even when asked the bot itself, it was unable to answer it accurately. It was, however, able to explain that the data used to provide user query with relevant context comes from UL FS webpage and standard Q\&A entries.
 
 
 %------------------------------------------------
