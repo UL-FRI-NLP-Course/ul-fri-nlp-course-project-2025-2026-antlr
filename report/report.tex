@@ -22,6 +22,8 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 \graphicspath{{fig/}}
 
@@ -112,7 +114,7 @@ an overview of our planned methodology, and a description of the proposed corpus
 % samo:
 Students at university faculties routinely encounter administrative questions:
 How do I enrol in the next academic year? How many times can I take an exam?
-What happens if I miss the enrolment deadline
+What happens if I miss the enrolment deadline?
 What documents do I need to submit my thesis?
 These questions are answered on the UL FRI website and in official study regulations,
 yet students frequently contact the Student Affairs Office (Referat) by email or in person
@@ -138,10 +140,10 @@ with a systematic evaluation framework and reproducible code.
 To create our dataset, we will gather data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
 We will use Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will poll students to collect a set of real queries.
 
-The core implementation will include a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We propose using the Slovenian GaMS model to process user intents and generate answers. 
-For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings, and store them in PostgreSQL using the pgvector extension. 
+The core implementation will include a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We propose using the Slovenian GaMS model to process user intents and generate answers.
+For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings, and store them in PostgreSQL using the pgvector extension.
 
-To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona. 
+To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona.
 We will set guardrails so the system refuses to answer out-of-domain questions and handles unanswerable queries by directing the user to the student affairs office.
 Finally, we will evaluate the system using automated retrieval metrics and human testing on our polled dataset.
 
@@ -192,13 +194,13 @@ Another example of university chatbot is a virtual AI assistant developed by fak
 % We can insert numbered and bullet lists:
 
 % % the [noitemsep] option makes the list more compact
-% \begin{enumerate}[noitemsep] 
+% \begin{enumerate}[noitemsep]
 % 	\item First item in the list.
 % 	\item Second item in the list.
 % 	\item Third item in the list.
 % \end{enumerate}
 
-% \begin{itemize}[noitemsep] 
+% \begin{itemize}[noitemsep]
 % 	\item First item in the list.
 % 	\item Second item in the list.
 % 	\item Third item in the list.
@@ -233,7 +235,7 @@ Another example of university chatbot is a virtual AI assistant developed by fak
 % On the other hand, \figurename~\ref{fig:whole} is an example of a figure that spans across the whole page (across both columns) of the report.
 
 % % \begin{figure*} makes the figure take up the entire width of the page
-% \begin{figure*}[ht]\centering 
+% \begin{figure*}[ht]\centering
 % 	\includegraphics[width=\linewidth]{whole_page.pdf}
 % 	\caption{\textbf{Visualization of a Bayesian hierarchical model.} This is an example of a figure that spans the whole width of the report.}
 % 	\label{fig:whole}
