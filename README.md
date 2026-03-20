@@ -14,6 +14,10 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 
 ---
 
+## Project status
+
+* 20/03/2026: [Report #1](./report/report-1.pdf)
+
 
 ## Related Work
 
@@ -25,5 +29,3 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 - [UL FS chatbot — existing example at UL](https://www.fs.uni-lj.si)
 
 ---
-
-
