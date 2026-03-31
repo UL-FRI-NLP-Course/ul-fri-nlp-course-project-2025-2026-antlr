@@ -1,0 +1,197 @@
+---
+title: Knjižnica
+source: https://fri.uni-lj.si/sl/knjiznica
+---
+
+[Pojdi na vsebino](#main-content)
+
+[Domov](/)
+>
+ [O fakulteti](/sl/poslanstvo-vizija)
+>
+ [Kje je kaj](/sl/kje-je-kaj)
+>
+Knjižnica
+
+Knjižnica
+
+Skupna Knjižnica Fakultete za kemijo in kemijsko tehnologijo (FKKT) in Fakultete za računalništvo in informatiko (FRI) deluje na lokaciji Večna pot 113. Knjižnica FKKT in FRI hrani knjižno gradivo v prostem pristopu na sami lokaciji knjižnice, v zunanjih dislociranih skladiščih ter po katedrah na FKKT. Vsem uporabnikom knjižnice je na voljo na vpogled in za izposojo na dom knjižno gradivo, ki se nahaja v prostem pristopu. Knjižno gradivo, ki je locirano na katedrah FKKT ni predvideno za izposojo. Iz dislociranih skladišč je možna izposoja diplomskih, magistrskih in doktorskih del FKKT in FRI, ki pa jih je potrebno prej predhodno naročiti v knjižnici.
+
+# Delovni čas in naslov
+
+**Odpiralni čas:**
+
+ponedeljek–četrtek, 8.00–19.00  
+petek, 8.00–18.00
+
+**Delovni čas - izposoja gradiva:**
+
+ponedeljek, torek in četrtek, 8.00–15.00  
+sreda, 8.00–16.00  
+petek, 8.00–14.00
+
+**Na informacijskem pultu je omogočen prevzem naročenega gradiva ter vračilo izposojenega gradiva. Za vračanje gradiva se lahko uporablja Trezor pred vhodnimi vrati knjižnice.**
+
+**Naslov knjižnice:**  
+Univerza v Ljubljani  
+Knjižnica FKKT in FRI  
+Večna pot 113  
+1000 Ljubljana
+
+**Telefon:**  
+izposoja: 01 479 8002 ali 01 479 8003  
+vnos bibliografij in obdelava gradiva: 01 479 8005 (FRI); 01 479 8006 (FKKT)  
+vodja knjižnice: 01 479 8004
+
+**E-naslov knjižnice:**  
+[knjiznicafkkri@fkkt.uni-lj.si](mailto:knjiznicafkkri@fkkt.uni-lj.si)  
+  
+**E-naslov za medknjižnično izposojo:**  
+[illfkkri@fkkt.uni-lj.si](mailto:illfkkri@fkkt.uni-lj.si)
+
+# Vpis
+
+Pri vpisu v Knjižnico FKKT in FRI je  potrebno predložiti veljavno študentsko izkaznico ali potrdilo o vpisu in veljaven osebni dokument ter izpolniti vpisni list. Študenti lahko vpisni postopek pospešijo s spletnim vpisom preko portala COBISS+.
+
+Navodila so objavljena na spletni strani [Vpis v knjižnico](https://fkkt.uni-lj.si/knjiznica-fkkt).
+
+# Navodila
+
+Računalniki - Za dostop do računalnikov v knjižnici je potrebna [digitalna identiteta UL](https://www.uni-lj.si/studentsko_zivljenje/informacijske_storitve/pomoc_in_podpora/ul_id/ "Opens external link in new window"). Digitalno identiteto UL predstavljata [uporabniško ime in geslo](https://id.uni-lj.si/ "Opens external link in new window"), ki se uporabi za prijavo na računalnike v prostorih knjižnice ter za dostop do Eduroama.
+
+Za dostop do informacijskih virov tudi s pomočjo oddaljenega dostopa od doma uporabite portal [Digitalna Knjižnica Univerza v Ljubljani](http://dikul.uni-lj.si/ "Opens external link in new window") (DiKUL).
+
+Trezor za vračilo knjižnega gradiva – vsi uporabniki lahko vračate izposojene knjige tudi v času, ko je knjižnica zaprta.
+
+Vpisanim članom knjižnice so za študij na voljo stekleni boksi (kubiksi) - oglej si [pogoje](http://www.fkkt.uni-lj.si/fileadmin/datoteke/7-Knji%C5%BEnica/Navodila_za_uporabnike_kubiksov.pdf) uporabe.
+
+**NOVOST**: možnost rezervacije zastekljene učilnice v II. etaži knjižnici za skupine študentov (min. 4-5 oseb) - oglej si [navodila](http://www.fkkt.uni-lj.si/fileadmin/datoteke/7-Knji%C5%BEnica/Navodila_za_rezervacijo_zastekljene_u%C4%8Dilnice.pdf).
+
+# Pogoji poslovanja
+
+* [Poslovnik Knjižnice FKKT in FRI](http://www.fkkt.uni-lj.si/fileadmin/datoteke/7-Knji%C5%BEnica/Poslovnik_Knji%C5%BEnjice_FKKT_in_FRI.pdf "Initiates file download")
+* [Cenik knjižničnih storitev 2021–2022](/upload/knjiznica/Knjiznica_cenik_2021_22.pdf)
+
+# Bibliografije raziskovalcev
+
+Knjižnica FKKT in FRI vnaša in vodi osebne bibliografije raziskovalcev v sistem Cobiss. Storitev je brezplačno na voljo za zaposlene in upokojene učitelje iz UL FKKT in UL FRI ter za vpisane študente matičnih fakultet za potrebe pridobitve štipendije v času študija.
+
+Obrazec za bibliografijo je na voljo v [spletni obliki](https://fri.uni-lj.si/cobiss/ "Opens external link in new window") ali se ga izpiše v [pdf formatu](https://fri.uni-lj.si/cobiss/obrazec.pdf "Initiates file download"). Za določanje ustrezne tipologije dokumentom se uporabi veljavna [Tipologija dokumetov/del](http://home.izum.si/COBISS/bibliografije/Tipologija_slv.pdf "Opens external link in new window") za vodenje bibliografij v sistemu Cobiss in za kategorizacijo publikacij veljavna [dokumentacija](http://www.sicris.si/public/jqm/memo.aspx?lang=slv&opdescr=faq&source=evaluation.inc&opt=3&subopt=7 "Opens external link in new window") za informacijski sistem Sicris.
+
+Za vnos v sistem Cobis je potrebno poslati po elektronski pošti oziroma predložiti v knjižnico:  
+- izpolnjen [Obrazec za bibliografijo](https://fri.uni-lj.si/cobiss/ "Opens external link in new window")  
+- primarni vir (članek oz. prispevek, zbornik, knjiga ...)  
+- ustrezna dokazila (vabilo, recenzija ...)
+
+E-naslov za vnos bibliografij za zaposlene na UL FKKT:   
+Vesna Vižin: [vesna.vizin(at)fkkt.uni-lj.si](mailto:vesna.vizin@fkkt.uni-lj.si)
+
+E-naslov za vnos bibliografij za zaposlene na UL FRI:  
+Petra Simonič: [petra.simonic(at)fri.uni-lj.si](mailto:petra.simonic@fri.uni-lj.si)
+
+Vse raziskovalce opozarjamo, da se v akademskem okolju soočamo s plenilskimi revijami in plenilskimi založniki ter ugrabljenimi revijami. Plenilske revije vabijo raziskovalce k objavi svojih del proti plačilu in obljubljajo kakovost, ki je ne nudijo. Tako imenovane ugrabljene revije prevzamejo identiteto druge ugledne revije s podobnim ali enakim naslovom in zavajajo avtorje glede pristnosti revije.
+
+Več informacij je na navedenih povezavah:   
+[Seznam ugrabljenih revij na "Scholarly Open Access"](https://web.archive.org/web/20161017195303/https://scholarlyoa.com/other-pages/hijacked-journals/ "Opens external link in new window")    
+[Seznam verjetno plenilskih revij na "Scholarly Open Access"](https://web.archive.org/web/20161202192038/https://scholarlyoa.com/individual-journals/ "Opens external link in new window")  
+[Seznam verjetno plenilskih založnikov na "Scholarly Open Access"](https://web.archive.org/web/20161222020349/https:/scholarlyoa.com/publishers/ "Opens external link in new window")  
+[Seznam zavajajoče metrike na "Scholarly Open Access"](https://web.archive.org/web/20161111143000/https://scholarlyoa.com/category/misleading-metrics/ "Opens external link in new window")
+
+**Vključitev revij indeksiranih v ESCI v bazo podatkov JCR – faktor vpliva serijskih publikacij**
+
+V bazi podatkov JCR – faktor vpliva serijskih publikacij, so sedaj poleg naslovov revij, ki so indeksirane v SCIE, dodani še naslovi revij, ki so indeksirani v ESCI. ESCI (»Emerging Sources Citation Index«) je kot nova baza podatkov vključen v Web of Science in zajema okoli 3.000 naslovov revij. Z zadnjo posodobitvijo baze JCR so le-te pridobile faktor vpliva (IF) in so razvrščene v kategorije, podobno kot revije, indeksirane v SCIE.
+
+Raziskovalce opozarjamo, da revije, ki so indeksirane v ESCI, vsaj za sedaj pri izpolnjevanju kvantitativnih kriterijev pri izvolitvah v nazive niso enakovredne revijam, indeksiranim v SCIE in da so objave v revijah, indeksiranih v ESCI, pri »Vrednotenju bibliografskih kazalcev raziskovalne uspešnosti po metodologiji ARIS« razvrščene v rubriko 1B, kar posledično pomeni manjše število točk za avtorje.
+
+[ODPRTA ZNANOST](https://www.uni-lj.si/raziskovanje/odprta-znanost)
+
+[Ugodnosti pri objavi odprtodostopnih člankov v letu 2026](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.uni-lj.si%2Fassets%2FSluzba-za-knjiznicno-dejavnost%2FUgodnosti-pri-objavi-odprtodostopnih-clankov-v-2026-26.2.2026.docx&wdOrigin=BROWSELINK)
+
+Za koriščenje vavčerja pri objavi v publikacijah ACM (Association of Computing Machinery) mora dopisni avtor pri oddaji članka v sistem uporabiti elektronski naslov z domeno Univerze v Ljubljani. Če dopisni avtor ne bo uporabil e-naslova z domeno uni-lj.si koriščenje vavčerja ne bo mogoče, ker ima ACM sistem avtomatsko potrjevanje ([ACM navodila](https://intranet.fri.uni-lj.si/sl/system/files/upload/Intranet/Objave%20-%20priponke/2024%20Author%20Rights%20Workflow%20ACM.pdf)).
+
+# Osebje
+
+**Vodja knjižnice:**
+
+Branko Škrinjar: [branko.skrinjar(at)fkkt.uni-lj.si](mailto:branko.skrinjar@fkkt.uni-lj.si)  
+Telefonska številka: 01 479 8004
+
+**Izposoja:**
+
+Saša Hodošček: [sasa.hodoscek(at)fkkt.uni-lj.si](mailto:sasa.hodoscek@fkkt.uni-lj.si)  
+Telefonska številka: 01 479 8002
+
+Barbara Torkar:[barbara.torkar(at)fri.uni-lj.si](mailto:barbara.torkar@fri.uni-lj.si)  
+Telefonska številka: 01 479 8003
+
+**Vnos bibliografij in obdelava gradiva:**
+
+Petra Simonič: [petra.simonic(at)fri.uni-lj.si](mailto:petra.simonic@fri.uni-lj.si)  
+Telefonska številka: 01 479 8005
+
+mag. Vesna Vižin: [vesna.vizin(at)fkkt.uni-lj.si](mailto:vesna.vizin@fkkt.uni-lj.si)  
+Telefonska številka: 01 479 8006
+
+# Uporabne povezave do on-line informacijskih virov
+
+* [DiKUL](http://dikul.uni-lj.si/)
+* [SciFinder Scholar](https://scifinder.cas.org/scifinder/login?TYPE=33554433&REALMOID=06-b7b15cf0-642b-1005-963a-830c809fff21&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-LEDGtA%2fZO7FwIrbaoy1pqkoUcxA8sTqb%2bp5yRwFxIAj15N1wtdF%2f7NHNts48HxkH&TARGET=-SM-http%3a%2f%2fscifinder%2ecas%2eorg%3a443%2fscifinder%2f "Opens external link in new window") (potrebna [registracija](http://www.ctk.uni-lj.si/zbirke/SciFinder.html "Opens external link in new window"); dostop le iz prostorov UL)
+* [Web of Science](http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=N1PSqDbKuzpmWTjfTA5&preferencesSaved= "Opens external link in new window")
+* [Scopus](http://www.scopus.com/ "Opens external link in new window")
+* [ScienceDirect](http://www.sciencedirect.com/ "Opens external link in new window")
+* [SpringerLink](http://link.springer.com/ "Opens external link in new window")
+* [IEEE Explore](http://ieeexplore.ieee.org/Xplore/dynhome.jsp?tag=1 "Opens external link in new window")
+* [ACM Digital Library](http://dl.acm.org/ "Opens external link in new window") (dostop iz prostorov na UL FRI in knjižnice)
+* [AccessEngineering](http://nukweb.nuk.uni-lj.si/login?url=https://www.accessengineeringlibrary.com)
+* [ACS revije](http://pubs.acs.org/about.html)
+* [RSC Gold](http://pubs.rsc.org/en/Search/AdvancedSearch "Opens external link in new window")
+* [Acta Chimica Slovenica](http://acta.chem-soc.si/)
+* [ePrints.FRI](http://eprints.fri.uni-lj.si/ "Opens external link in new window")
+* [Biomedical & Life Sciences Collection](http://www.hstalks.com/trial) (user: ljubljana; pass: member)
+* [Patenti](https://si.espacenet.com/ "Opens external link in new window")
+* [Slovarji](http://www.ctk.uni-lj.si/slovarji/)
+* [Cobiss](https://plus.cobiss.si/opac7/bib/search "Opens external link in new window")
+* [Sicris](http://www.sicris.si/public/jqm/cris.aspx?lang=slv&opdescr=home&opt=1 "Opens external link in new window")
+* [Centralna tehniška knjižnica](http://www.ctk.uni-lj.si/)
+
+# Dodatno
+
+Dodatne informacije so na voljo na [spletni strani](http://www.fkkt.uni-lj.si/sl/knjiznica-fkkt-in-fri/) knjižnice Fakultete za kemijo in kemijsko tehnologijo.
+
+[O fakulteti](/sl/poslanstvo-vizija)
+
+[Poslanstvo in vizija](/sl/poslanstvo-vizija)
+
+[Vodstvo](/sl/vodstvo)
+
+[Organi fakultete](/sl/organi-fakultete)
+
+[Osebje](/sl/o-fakulteti/osebje)
+
+[Kontakti](/sl/kontakti)
+
+[Kako do nas](/sl/o-fakulteti/kako-do-nas)
+
+[Kje je kaj](/sl/kje-je-kaj)
+
+[Knjižnica](/sl/knjiznica)
+
+[Fakultetna restavracija](/sl/fakultetna-restavracija)
+
+[Prodajalna in fotokopirnica](/sl/prodajalna-fotokopirnica)
+
+[Pravilniki, programi, poročila](/sl/pravilniki-programi-porocila)
+
+[Katalog informacij javnega značaja](/sl/katalog-informacij-javnega-znacaja)
+
+[Javna naročila](/sl/javna-narocila)
+
+[Kariera na FRI](/sl/kariera-na-fri)
+
+[Medijsko središče](/sl/medijsko-sredisce)
+
+[Najem prostora](/sl/najem-prostorov)
+
+[Založba UL FRI](/sl/zalozba-ul-fri)
+
+![]()
