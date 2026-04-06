@@ -51,7 +51,7 @@ class VectorStoreSettings(BaseModel):
 class Settings(BaseModel):
     """Main settings class combining all sub-settings."""
 
-    openai: OpenAISettings = Field(default_factory=OpenAISettings)
+    llama: OpenAISettings = Field(default_factory=OpenAISettings)
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     vector_store: VectorStoreSettings = Field(default_factory=VectorStoreSettings)
 
