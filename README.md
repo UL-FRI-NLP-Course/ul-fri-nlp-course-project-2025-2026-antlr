@@ -14,6 +14,15 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 
 ---
 
+## Install and run
+
+Please run the script
+
+```bash
+sbatch run.sh
+```
+
+
 ## Project status
 
 * 20/03/2026: [Report #1](./report/report-1.pdf)

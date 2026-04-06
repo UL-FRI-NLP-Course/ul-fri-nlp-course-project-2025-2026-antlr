@@ -141,7 +141,7 @@ To create our dataset, we will gather data by scraping the UL FRI website (enrol
 We will use Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will poll students to collect a set of real queries.
 
 The core implementation will include a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We propose using the Slovenian GaMS model to process user intents and generate answers.
-For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings, and store them in PostgreSQL using the pgvector extension.
+For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings using BERT based model\cite{wang2024multilingual}, and store them in PostgreSQL using the pgvector extension.
 
 To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona.
 We will set guardrails so the system refuses to answer out-of-domain questions and handles unanswerable queries by directing the user to the student affairs office.
