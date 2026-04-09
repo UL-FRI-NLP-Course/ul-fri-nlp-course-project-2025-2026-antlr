@@ -1,0 +1,176 @@
+---
+title: Dogodki
+source: https://fri.uni-lj.si/sl/dogodki
+---
+
+Dogodki
+
+Dogodki
+
+* obiščite nas
+
+Poletna šola FRI
+
+Poletna šola FRI
+
+Popestrite si poletje na delavnicah s področja računalništva in informatike za ...
+
+Robo liga FRI
+
+Robo liga FRI
+
+Robo liga FRI je univerzitetno tekmovanje v mobilni robotiki, ki združuje zabavo in ...
+
+Slovenska tovarna umetne inteligence
+
+Slovenska tovarna umetne inteligence
+
+Slovenija je pridobila evropska sredstva za vzpostavitev novega superračunalnika in ...
+
+Delavnice v Garaži FRI
+
+Delavnice v Garaži FRI
+
+V ustvarjalno-tehnološkem prostoru Garaža FRI se vsak mesec zvrsti izbrana brezplačna ...
+
+Izobraževanja za učitelje
+
+Izobraževanja za učitelje
+
+Posodobitveni programi za učitelje računalništva in informatike na osnovnih in srednjih ...
+
+Akademija FRI
+
+Akademija FRI
+
+Tehnološko usmerjena izobraževanja za strokovne kadre in za splošno javnost.
+
+Frižider
+
+Frižider
+
+Frižider je makerspace na FRI-ju. Tu lahko uresničite svoje ideje.
+
+* fri med ljudmi
+
+* [alt: slika med ljudmi 14![slika med ljudmi](https://www.fri.uni-lj.si/sites/default/files/DSC_1192a_1.jpg)](/sl/znanstival) 
+
+  Znanstival je festival, namenjen promociji znanosti in izobraževanja.
+* [alt: slika med ljudmi 29![slika med ljudmi](https://www.fri.uni-lj.si/sites/default/files/DSC_4966a_1.jpg)](/sl/dnevi-racunalnistva) 
+
+  Na Dnevih računalništva za organizirane šolske skupine odstiramo skrivnosti računalnikov in programiranja.
+* [alt: slika med ljudmi 1![slika med ljudmi](https://www.fri.uni-lj.si/sites/default/files/DSC_2805a_1.jpg)](/sl/noc-raziskovalcev) 
+
+  Noč raziskovalcev je projekt, katerega cilj je predstaviti poklic in življenje znanstvenikov.
+* [alt: slika med ljudmi 25![slika med ljudmi](https://www.fri.uni-lj.si/sites/default/files/DSC_4674a_1.jpg)](/sl/teden-programiranja) 
+
+  Brezplačne delavnice za osnovnošolce, srednješolce in starejše v okviru Evropskega tedna programiranja.
+* [alt: slika med ljudmi 9![slika med ljudmi](https://www.fri.uni-lj.si/sites/default/files/DSC_6005.JPG)](/sl/informativa) 
+
+  UL FRI se vsako leto udeleži sejma Informativa, kjer se dijaki lahko seznanijo s študijskimi programi in možnostmi študija.
+
+* [![slikaX](https://www.fri.uni-lj.si/sites/default/files/DSC_1192a_1.jpg)](/sl/znanstival) 
+
+  Znanstival je festival, namenjen promociji znanosti in izobraževanja.
+* [![slikaX](https://www.fri.uni-lj.si/sites/default/files/DSC_4966a_1.jpg)](/sl/dnevi-racunalnistva) 
+
+  Na Dnevih računalništva za organizirane šolske skupine odstiramo skrivnosti računalnikov in programiranja.
+* [![slikaX](https://www.fri.uni-lj.si/sites/default/files/DSC_2805a_1.jpg)](/sl/noc-raziskovalcev) 
+
+  Noč raziskovalcev je projekt, katerega cilj je predstaviti poklic in življenje znanstvenikov.
+* [![slikaX](https://www.fri.uni-lj.si/sites/default/files/DSC_4674a_1.jpg)](/sl/teden-programiranja) 
+
+  Brezplačne delavnice za osnovnošolce, srednješolce in starejše v okviru Evropskega tedna programiranja.
+* [![slikaX](https://www.fri.uni-lj.si/sites/default/files/DSC_6005.JPG)](/sl/informativa) 
+
+  UL FRI se vsako leto udeleži sejma Informativa, kjer se dijaki lahko seznanijo s študijskimi programi in možnostmi študija.
+
+* v tekmovalnem duhu
+
+Na FRI gostimo številna mednarodna tekmovanja - tako za osnovnošolce in srednješolce kot tudi za študente.
+
+* kmalu na fri
+
+Trenutno ni aktualnih dogodkov.
+
+![](/sites/all/modules/custom/osebje/images/arrowRight_10.png)
+
+* ne spreglejte
+
+Trenutno ni aktualnih dogodkov.
+
+![](/sites/all/modules/custom/osebje/images/arrowRight_10.png)
+
+Dogajanje na FRI
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_03.png)
+
+11
+
+poletnih šol FRI za počitniško kravžljanje možganov
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_05.png)
+
+376
+
+udeležencev na računalniškem tekmovanju Bober
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_07.png)
+
+120
+
+učiteljev slovenskih šol vsako leto na izobraževanju na FRI
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_09.png)
+
+30
+
+gostujočih predavanj iz gospodarstva na leto
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_03.png)
+
+11
+
+poletnih šol FRI za počitniško kravžljanje možganov
+
+![ikona](https://www.fri.uni-lj.si/sites/default/files/img_05.png)
+
+376
+
+udeležencev na računalniškem tekmovanju Bober
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_07.png)
+
+120
+
+učiteljev slovenskih šol vsako leto na izobraževanju na FRI
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_09.png)
+
+30
+
+gostujočih predavanj iz gospodarstva na leto
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_03.png)
+
+11
+
+poletnih šol FRI za počitniško kravžljanje možganov
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_05.png)
+
+376
+
+udeležencev na računalniškem tekmovanju Bober
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_07.png)
+
+120
+
+učiteljev slovenskih šol vsako leto na izobraževanju na FRI
+
+![](https://www.fri.uni-lj.si/sites/default/files/img_09.png)
+
+30
+
+gostujočih predavanj iz gospodarstva na leto

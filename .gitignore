@@ -103,6 +103,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
 .venv
 env/
 venv/
@@ -143,3 +144,8 @@ logs/
 .venv/
 .database/
 *.sif
+
+# tmp scripts
+/convert_pdfs.py
+/clean_md.py
+/clean_pdfs.py

@@ -1,0 +1,557 @@
+MAGISTRSKI ŠTUDIJSKI PROGRAM
+DRUGE STOPNJE
+RAČUNALNIŠTVO IN INFORMATIKA
+PREDSTAVITVENI ZBORNIK
+za študente, prvič vpisane v 1. letnik v študijskem letu 2026/2027
+Ljubljana, 2026
+
+PODATKI ŠTUDIJSKEGA PROGRAMA RAČUNALNIŠTVO IN
+INFORMATIKA
+Verzija (veljavna od): 2026-1 (01. 10. 2026)
+Osnovni podatki
+Ime programa Računalništvo in informatika
+Lastnosti programa
+Vrsta magistrski
+Stopnja druga stopnja
+KLASIUS-SRV Magistrsko izobraževanje (druga bolonjska stopnja)/magistrska izobrazba (druga
+bolonjska stopnja) (17003)
+ISCED • računalništvo (48)
+KLASIUS-P • Računalniške vede (podrobneje neopredeljeno) (4810)
+KLASIUS-P-16 • Informacijske in komunikacijske tehnologije (IKT), podrobneje
+neopredeljeno (0610)
+Frascati • Naravoslovno-matematične vede (1)
+• Tehniške vede (2)
+Raven SOK Raven SOK 8
+Raven EOK Raven EOK 7
+Raven EOVK Druga stopnja
+Področja/moduli/smeri • Ni členitve (študijski program)
+• Podatkovne vede (smer)
+• Računalništvo in informatika (smer)
+Članice Univerze v • Fakulteta za računalništvo in informatiko, Večna pot 113, 1000 Ljubljana,
+Ljubljani Slovenija - nosilka
+Trajanje (leta) 2
+Število KT na letnik 60
+Načini izvajanja študija redni
+Temeljni cilji programa
+Magistrski študijski program Računalništvo in informatika je namenjen poglobitvi, razširitvi in nadgradnji znanj,
+pridobljenih na prvi stopnji, da bi osvojili napredna praktična in teoretična znanja s področja računalništva in
+informatike. Program sledi hitremu tehnološkemu napredku in nudi temelj za vseživljenjsko izobraževanje in
+uspešno kariero doma kot v mednarodnem okolju. Program nudi osnove za raziskovalno in razvojno delo ter
+akademsko kariero. Magistri so usposobljeni za višja in vodilna mesta v industriji, upravljanju, znanosti in
+raziskavah. Program je razdeljen na tematske sklope, kar omogoča študentom izbirati posamezne vsebinsko
+povezane študijske predmete. Študenti se lahko samoiniciativno vključujejo v projekte, ki potekajo v posameznih
+fakultetnih raziskovalnih laboratorijih.
+Splošne kompetence (učni izidi)
+Magistri računalništva in informatike nadgradijo kompetence, ki so jih pridobili na prvi stopnji. Tisti, ki so
+dokončali kakšen drug študijski program na prvi stopnji pa tudi dopolnijo temeljne kompetence s področja
+računalništva in informatike. Magistri si pridobijo kompetence, potrebne za nadaljevanje študija na doktorski
+stopnji. Splošne pridobljene kompetence vključujejo:
+sposobnost definiranja, razumevanja in reševanja kreativnih profesionalnih izzivov na področju računalništva in
+informatike,
+poznavanje linearne algebre, vrst, integralske in diskretne transformacije, funkcij več spremenljivk in vektorske
+analize,
+poznavanje in raba funkcijskega programiranja,
+poznavanje in uporaba analize algoritmov, prostorskih podatkovnih struktur, vzporednih algoritmov,
+razprševanja, algoritmov s predpostavkami, hevrističnega programiranja,
+poznavanje in praktična raba naprednih postopkov za analizo podatkov,
+
+poznavanje vhodno-izhodnih in perifernih naprav, vodil, omrežnih vmesnikov in gonilnikov.
+Predmetnospecifične kompetence (učni izidi)
+Z izbiro predmetov iz posameznih tematskih sklopov si magistri obeh smeri pridobijo naslednje kompetence
+(glede na izbrane module predmetov):
+Inteligentna analiza podatkov
+● poznavanje planiranja in sklepanja, različnih metod učenja, kvalitativnega modeliranja, vizualizacije modelov,
+kombiniranja algoritmov, razlage napovedi, povezovalnih pravil in učečih se avtomatov,
+● praktična raba naprednih metod za podatkovno rudarjenje in analizo podatkov,
+● uporaba teoretičnih osnov omrežne znanosti ter uporaba analize omrežij,
+● sposobnost uporabe pristopov z izbranih tehničnih področjih in na področju biologije in genomike.
+Medijske tehnologije
+● podajanje informacij ter oblikovanje interaktivnosti s poudarkom na razvoju uporabniško in podatkovno
+osredotočenih multimedijskih programskih rešitev,
+● poznavanje pristopov za iskanje, ekstrakcijo, zajem in analizo podatkov s spleta, upoštevajoč delovanje in
+časovno analizo algoritmov,
+● razumevanje delovanja in zmožnost implementacije metod napredne metode računalniške grafike na podlagi
+znanstvene literature
+● osvojitev znanj na področju računalniške zvočne produkcije za tehnično in kreativno aplikacijo v produkcijskih
+okoljih.
+Računalniški sistemi in računanje
+● razložiti osnovne principe delovanja perifernih naprav, načrtovanja in administracije računalniških sistemov,
+● aktualne metode in platforme procesiranja kot možne alternative klasičnim električno tranzistorskim dvo-
+vrednostnim logičnim strukturam,
+● poznavanje infrastrukture za delovanje privatnih, hibridnih in zasebnih oblakov,
+● pridobitev znanja s področij vzporednih in porazdeljenih sistemov, paralelnega programiranja in procesiranja.
+Omrežja in varnost
+● poznavanje osnov kriptografije in računalniške varnosti,
+● znanja varovanja omrežij in zasebnosti v sodobnih informacijskih sistemih,
+● poznavanje senzorskih omrežij z omejeno močjo procesorja in omejenim napajanjem,
+● poznavanje uporabe računalništva in informatike v forenzičnih postopkih.
+Algoritmi in programska oprema
+● pregledno poznavanje področja interakcije med človekom in računalnikom,
+● sposobnost reševanja praktičnih problemov s teoretičnim računalništvom in kreativnih strokovnih nalog s
+področja računalništva in informatike, razumevanje osnovnih topoloških pojmov in konstrukcij,
+● razumevanje področja aproksimacijskega in naključnostnega reševanja računskih problemov,
+
+● sposobnost vrednotenja in implementacije programskih jezikov in različnih programerskih paradigem.
+Računske metode
+● razumevanje osnovnih topoloških pojmov in konstrukcij in osnov numerične matematike za reševanje
+praktičnih problemov,
+● reševanje kreativnih strokovnih nalog iz področja računalništva in informatike,
+● sposobnost uporabe matematičnih pristopov v izbranih tehničnih področjih,
+● poznavanje alternativnih metod procesiranja in naravnih algoritmov.
+Metode računalniškega zaznavanja
+● poznavanje naprednih metod analize kompleksnih signalov, kot so videoposnetki,
+● osnove obdelave biomedicinskih signalov in slik,
+● pregled nad področjem biometrije in temelji biometričnih sistemov s področja računalniškega vida,
+● osvojitev teorije in rabe osnovnih algoritmov in pristopov na področju obdelave naravnega jezika.
+Poleg zgornjih kompetenc študenti na smeri Podatkovne vede pridobijo še naslednje kompetence:
+● uporaba matematičnih znanj za razumevanje klasičnih in sodobnih pristopov strojnega učenja in statistike,
+● uporaba metod strojnega učenja za reševanje nalog napovedovanja, razvrščanja v skupine in sklepanja iz
+podatkov,
+● uporaba programskih orodij pri reševanju problemov s področja podatkovnih ved,
+● uporaba kritičnega razmišljanja pri obravnavi družbenih vidikov podatkovnih ved (varnost, zasebnost, etika)
+● sposobnost prenosa temeljnih znanj podatkovnih ved na reševanje praktičnih problemov s specifičnih
+področij, kot so analiza omrežij, bioinformatika, biometrija, obdelava naravnega jezika, računalniški vid in
+umetna inteligenca.
+Pogoji za vpis
+V magistrski študijski program se lahko vpiše, kdor:
+Ima opravljen študij 1. stopnje strokovnih področij računalništvo ali informatika, oziroma študij naravoslovja in
+tehnike (matematika, fizika, elektrotehnika, kemija in kemijska tehnologija, strojništvo, gradbeništvo).
+Ima opravljen študij 1. stopnje s področja, ki ni zajeto pod a) in je pred vpisom opravil naslednje izpite iz 1.
+stopenjskega programa FRI: Programiranje 1, Diskretne strukture, Osnove digitalnih vezij, Arhitektura
+računalniških sistemov, Osnove informacijskih sistemov ali pa je tekom svojega prvostopenjskega študija osvojil
+snov pokrito v naštetih predmetih.
+Merila za izbiro ob omejitvi vpisa
+Če bo sprejet sklep o omejitvi vpisa, bodo kandidati izbrani glede na:
+• povprečne ocene dosežene na študiju I. stopnje (40% točk);
+• rezultate izbirnega izpita (60%).
+Izbirni izpit bo zajemal področja matematike, programiranja, algoritmov in računalniških sistemov. Sestavni del
+skupne ocene bo izkazovanje izjemnih dosežkov, ki se ovrednotijo na podlagi strukturiranega življenjepisa in
+potencialnega intervjuja. Obseg izjemnosti oceni Komisija za študijske zadeve FRI.
+Izbirni izpit bomo izvajali na podlagi pravil in kriterijev za vrednotenje, določenih na fakulteti.
+
+Merila za priznavanje znanja in spretnosti, pridobljenih pred vpisom v program
+V okviru študijskega programa je možno priznavanje relevantnega znanja na področju pridobljeno s formalnim,
+neformalnim ali izkustvenim učenjem. To znanje je mogoče priznati kot del opravljene študijske obveznosti in
+sicer v višini največ 6 KT za en sklop (okvirno zaokrožena snov enega predmeta) zunaj fakultete pridobljenih znanj.
+Pri priznavanju se upoštevajo spričevala in druge ustrezne listine oz. dokazila. Prošnje za priznanje pridobljenih
+znanj bo obravnavala Komisija za študijske zadeve FRI in jih na njeno priporočilo odobraval Senat FRI.
+Načini ocenjevanja
+Načini ocenjevanja so skladni s Statutom UL in navedeni v učnih načrtih.
+Pogoji za napredovanje po programu
+Za vpis v 2. letnik je potrebno opraviti obveznosti 1. letnika v obsegu 54 ECTS.
+Za ponovni vpis v isti letnik je potrebno opraviti vsaj polovico obveznosti iz študijskega programa tega letnika
+(torej 30 ECTS).
+Pogoji za prehajanje med programi
+V skladu z Merili za prehode med študijskimi programi je možen prehod med študijskimi programi:
+1. ki ob zaključku študija zagotavljajo pridobitev primerljivih kompetenc oziroma učnih izidov;
+2. med katerimi se lahko po merilih za priznavanje znanja in spretnosti, pridobljenih pred vpisom v program
+prizna vsaj polovica obveznosti po Evropskem prenosnem kreditnem sistemu (v nadaljevanju: ECTS) iz prvega
+študijskega programa, ki se nanašajo na obvezne predmete drugega študijskega programa.
+Pogoji za prestop na magistrski program Računalništvo in informatika iz drugih programov (magistrskih študijev)
+so:
+• izpolnjeni pogoji za vpis v magistrski program Računalništvo in informatika,
+• izpolnjeni pogoji za vpis v drugi letnik študijske smeri, na kateri je študent trenutno vpisan, z dodatnim
+pogojem, da je opravil študijske obveznosti pri vseh predmetih, ki so bistveni za nadaljevanje študija ali
+ekvivalentnih predmetih na drugih visokošolskih ustanovah, katerih ustreznost oceni Komisija za študijske
+zadeve.
+Pogoji za dokončanje študija
+Za vse študente so pogoji za dokončanje predlaganega študija: opravljene vse obveznosti pri vpisanih predmetih
+v skupnem obsegu vsaj 96 kreditnih točk, v skladu s pravili pripravljeno in oddano magistrsko delo, ki je
+ocenjeno s 24 KT ter uspešno opravljen javni zagovor magistrskega dela.
+Pogoji za dokončanje posameznih delov programa, če jih program vsebuje
+Študijski program ne vsebuje delov, ki jih je mogoče posamezno zaključiti. Študij je enovit.
+Strokovni oz. znanstveni ali umetniški naslov (moški)
+• magister inženir računalništva in podatkovnih ved
+• magister inženir računalništva in informatike
+Strokovni oz. znanstveni ali umetniški naslov (ženski)
+• magistrica inženirka računalništva in podatkovnih ved
+• magistrica inženirka računalništva in informatike
+Strokovni oz. znanstveni ali umetniški naslov (okrajšava)
+• mag. inž. rač. in pod. ved
+• mag. inž. rač. in inf.
+Strokovni oz. znanstveni ali umetniški naslov (poimenovanje v angleškem jeziku in
+okrajšava)
+• Master of Science (M.Sc.)
+
+PREDMETNIK ŠTUDIJSKEGA PROGRAMA S PREDVIDENIMI NOSILKAMI IN NOSILCI PREDMETOV
+Podatkovne vede (smer)
+1. letnik
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     | vaje  | obl.  delo  | skupaj  |     |     |
+| --- | --- | --- | --- | --- | ----- | ----------- | ------- | --- | --- |
+štud.
+1.  0125839  Matematika 1  prof. dr. Polona  45    30      105  180  6  1. semester  ne
+Oblak
+2.  0129330  Načela  Aljaž Zalar, prof.  45    30      105  180  6  1. semester  ne
+|     | negotovosti  | dr. Erik Štrumbelj  |     |     |     |     |     |     |     |
+| --- | ------------ | ------------------- | --- | --- | --- | --- | --- | --- | --- |
+3.  0129331  Uvod v  izr. prof. dr. Slavko  45    30      105  180  6  1. semester  ne
+|     | podatkovne vede  | Žitnik, izr. prof. dr.  |     |     |     |     |     |     |     |
+| --- | ---------------- | ----------------------- | --- | --- | --- | --- | --- | --- | --- |
+Tomaž Curk
+4.  0644377  Metodologija  prof. dr. Erik  45    30      105  180  6  1. semester  ne
+|     | empiričnih  | Štrumbelj  |     |     |     |     |     |     |     |
+| --- | ----------- | ---------- | --- | --- | --- | --- | --- | --- | --- |
+raziskav
+| 5.  0086926  | Splošno izbirni  |     |     |     |     |     | 6   | 1. semester  | da  |
+| ------------ | ---------------- | --- | --- | --- | --- | --- | --- | ------------ | --- |
+predmet
+6.  0129384  Matematika 2  Aljaž Zalar, prof.  45    30      105  180  6  2. semester  ne
+dr. Gašper Fijavž,
+prof. dr. Polona
+Oblak, Žiga Virk
+7.  0129383  Strojno učenje za  doc. dr. Tomaž  45    30      105  180  6  2. semester  ne
+|     | podatkovne vede  | Hočevar, prof. dr.  |     |     |     |     |     |     |     |
+| --- | ---------------- | ------------------- | --- | --- | --- | --- | --- | --- | --- |
+|     | 1                | Blaž Zupan          |     |     |     |     |     |     |     |
+8.  0129453  Projekt  izr. prof. dr. Jure    30        150  180  6  2. semester  ne
+Demšar
+9.  0644378  Podatkovno  prof. dr. Erik  45    30      105  180  6  2. semester  ne
+|               | inženirstvo      | Štrumbelj  |     |     |     |     |     |              |     |
+| ------------- | ---------------- | ---------- | --- | --- | --- | --- | --- | ------------ | --- |
+| 10.  0086926  | Splošno izbirni  |            |     |     |     |     | 6   | 2. semester  | da  |
+predmet
+|     | Skupno  |     | 315  | 30  | 210  0  | 0  885  | 1440  60  |     |     |
+| --- | ------- | --- | ---- | --- | ------- | ------- | --------- | --- | --- |
+Splošnoizbirni predmet = zunanja izbirnost + izbirni seznam
+
+2. letnik
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     | vaje  | obl. štud.  | delo  | skupaj  |     |     |
+| --- | --- | --- | --- | --- | ----- | ----------- | ----- | ------- | --- | --- |
+1.  0127865  Strojno učenje za  prof. dr. Erik  45    30      105  180  6  1. semester  ne
+|     | podatkovne vede 2  | Štrumbelj  |     |     |     |     |     |     |     |     |
+| --- | ------------------ | ---------- | --- | --- | --- | --- | --- | --- | --- | --- |
+2.  0127867  Bayesova statistika  izr. prof. dr.  45    30      105  180  6  1. semester  ne
+Jure Demšar
+| 3.  0100890  | Strokovno izbirni  |     |     |     |     |     |     |     | 6  1. semester  | da  |
+| ------------ | ------------------ | --- | --- | --- | --- | --- | --- | --- | --------------- | --- |
+predmet (seznam)
+| 4.  0100890  | Strokovno izbirni  |     |     |     |     |     |     |     | 6  1. semester  | da  |
+| ------------ | ------------------ | --- | --- | --- | --- | --- | --- | --- | --------------- | --- |
+predmet (seznam)
+5.  0070493  Magistrsko delo      60        660  720  24  Celoletni  ne
+| 6.  0100890  | Strokovno izbirni  |     |     |     |     |     |     |     | 6  2. semester  | da  |
+| ------------ | ------------------ | --- | --- | --- | --- | --- | --- | --- | --------------- | --- |
+predmet (seznam)
+| 7.  0100890  | Strokovno izbirni  |     |     |     |     |     |     |     | 6  2. semester  | da  |
+| ------------ | ------------------ | --- | --- | --- | --- | --- | --- | --- | --------------- | --- |
+predmet (seznam)
+|     | Skupno  |     | 90  | 60  | 60  0  | 0   | 870  | 1080  | 60    |     |
+| --- | ------- | --- | --- | --- | ------ | --- | ---- | ----- | ----- | --- |
+Strokovno izbirni predmeti PV
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |     |
+| --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- | --- |
+štud.
+1.  0073694  Strojno učenje  doc. dr. Jana  45  6  24      105  180  6  1. semester  da
+Faganeli
+Pucer
+2.  0075157  Uvod v  Blaž Zupan   45  20  10      105  180  6  1. semester  da
+bioinformatiko
+3.  0075159  Obdelava  Franc Jager  45    30      105  180  6  1. semester  da
+biomedicinskih
+signalov in slik
+4.  0148113  Obdelava naravnega  prof. dr.  45  10  20      105  180  6  2. semester  da
+|     | jezika       | Marko  |     |     |     |     |     |     |     |     |
+| --- | ------------ | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+Robnik
+Šikonja
+5.  0075165   Slikovna biometrija  prof. dr.  45  10  20      105  180  6  1. semester  da
+Peter Peer
+
+6. 0075160 Napredne metode prof. dr. 45 10 20 105 180 6 2. semester da
+računalniškega vida Matej
+Kristan
+7. 0075158 Iskanje in Marko Bajec 45 10 20 105 180 6 1. semester, da
+ekstrakcija podatkov 2. semester
+s spleta
+8. 0127827 Visoko zmogljivo prof. dr. 45 10 20 105 180 6 2. semester da
+računanje Uroš Lotrič
+9. 0127837 Globoko učenje prof. dr. 45 30 105 180 6 2. semester da
+Danijel
+Skočaj
+10. 0127836 Velepodatki izr. prof. dr. 45 30 105 180 6 2. semester da
+Matjaž
+Kukar
+11. 0073688 Umetna inteligenca prof. dr. 45 10 20 105 180 6 2. semester da
+Ivan Bratko
+12. 0127835 Analiza omrežij izr. prof. dr. 45 30 105 180 6 2. semester da
+Lovro Šubelj
+Skupno 540 86 274 0 0 1260 2160 72
+Računalništvo in informatika (smer)
+1. letnik
+Kontaktne ure
+Koda Ime Nosilci Predavanja Seminarji Vaje Klinične Druge Samostojno Ure ECTS Semestri Izbirni
+UL vaje obl. štud. delo skupaj
+1. 0125839 Matematika 1 prof. dr. 45 30 105 180 6 1. semester ne
+Polona Oblak
+2. 0126169 Modul 1 - 45 30 105 180 6 1. semester da
+predmet 1
+3. 0126170 Modul 1 - 45 30 105 180 6 1. semester da
+predmet 2
+4. 0126171 Modul 2 - 45 30 105 180 6 1. semester da
+predmet 1
+5. 0126172 Modul 2 - 45 30 105 180 6 1. semester da
+predmet 2
+6. 0126173 Modul 1 - 45 30 105 180 6 2. semester da
+predmet 3
+
+7.  0126174  Modul 1 -    45    30      105  180  6  2. semester  da
+predmet 4
+8.  0126175  Modul 2 -    45    30      105  180  6  2. semester  da
+predmet 3
+9.  0126176  Modul 2 -    45    30      105  180  6  2. semester  da
+predmet 4
+10.  0069530  Splošno izbirni    45    30      105  180  6  2. semester  da
+predmet
+|     | Skupno  | 450  | 0   | 300  0  | 0   | 1050  | 1800  60  |     |     |
+| --- | ------- | ---- | --- | ------- | --- | ----- | --------- | --- | --- |
+2. letnik
+|     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     | vaje  | obl.  | delo  | skupaj  |     |     |
+| --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- | --- |
+štud.
+1.  0126541  Modul 3 - predmet 1    45    30      105  180  6  1. semester  da
+2.  0126542  Modul 3 - predmet 2    45    30      105  180  6  1. semester  da
+| 3.  0086926  | Splošno izbirni predmet  |     |     |     |     |     | 6   | 1. semester  | da  |
+| ------------ | ------------------------ | --- | --- | --- | --- | --- | --- | ------------ | --- |
+4.  0125850  Strokovno izbirni    45    30      105  180  6  1. semester,  da
+|     | predmet (poljuben  |     |     |     |     |     |     | 2. semester  |     |
+| --- | ------------------ | --- | --- | --- | --- | --- | --- | ------------ | --- |
+modulski/ostali)
+5.  0070493  Magistrsko delo      60        660  720  24  Celoletni  ne
+6.  0127817  Modul 3 - predmet 3    45    30      105  180  6  2. semester  da
+7.  0127818  Modul 3 - predmet 4    45    30      105  180  6  2. semester  da
+|     | Skupno  | 225  | 60  | 150  0  | 0   | 1185  | 1620  60  |     |     |
+| --- | ------- | ---- | --- | ------- | --- | ----- | --------- | --- | --- |
+Izbirnost: Študent izbere 3 module (po 4 predmete), na razpolago ima še 1 strokovno izbirni predmet (iz poljubnega modula ali seznama ostalih ponujenih predmetov).
+Zunanja izbirnost je predvidena pri vseh splošno izbirnih predmetih.
+
+I. Inteligentna analiza podatkov (modul strokovno izbirnih predmetov)
+|     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     | vaje  | obl. štud.  | delo  | skupaj  |     |     |
+| --- | --- | --- | --- | ----- | ----------- | ----- | ------- | --- | --- |
+1.  0073694  Strojno učenje  doc. dr. Jana  45  6  24      105  180  6  1. semester  da
+Faganeli Pucer
+2.  0075157  Uvod v  Blaž Zupan   45  20  10      105  180  6  1. semester  da
+bioinformatiko
+
+3.  0073688  Umetna  prof. dr. Ivan  45  10  20      105  180  6  2. semester  da
+|     | inteligenca  | Bratko  |     |     |     |     |     |     |     |     |
+| --- | ------------ | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+4.  0127835  Analiza omrežij  izr. prof. dr.  45    30      105  180  6  2. semester  da
+Lovro Šubelj
+|     | Skupno  |     | 180  | 36  | 84  | 0   | 0   | 420  | 720  24  |     |
+| --- | ------- | --- | ---- | --- | --- | --- | --- | ---- | -------- | --- |
+II. Medijske tehnologije (modul strokovno izbirnih predmetov)
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     | vaje  |     | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | ----- | --- | ----- | ----- | ------- | --- |
+štud.
+1.  0082114  Interaktivnost in  doc. dr.  45  20  10      105  180  6  1. semester  da
+|     | oblikovanje  | Ciril  |     |     |     |     |     |     |     |     |
+| --- | ------------ | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+|     | informacij   | Bohak  |     |     |     |     |     |     |     |     |
+2.  0082596  Računalniška zvočna  Denis  45    30      105  180  6  1. semester  da
+|     | produkcija  | Trček  |     |     |     |     |     |     |     |     |
+| --- | ----------- | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+3.  0075158  Iskanje in ekstrakcija  Marko  45  10  20      105  180  6  1. semester,  da
+|     | podatkov s spleta  | Bajec  |     |     |     |     |     |     |     | 2. semester  |
+| --- | ------------------ | ------ | --- | --- | --- | --- | --- | --- | --- | ------------ |
+4.  0148094  Napredna  prof. dr.  45    30      105  180  6  2. semester  da
+|     | računalniška grafika     | Matija  |     |     |     |     |     |     |     |     |
+| --- | ------------------------ | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+Marolt
+|     | Skupno  |     | 180  | 30  | 90  0  |     | 0   | 420  | 720  24  |     |
+| --- | ------- | --- | ---- | --- | ------ | --- | --- | ---- | -------- | --- |
+III. Računalniški sistemi in računanje (modul strokovno izbirnih predmetov)
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- |
+štud.
+1.  0082618  Nekonvencionalne  Miha Mraz  45  20  10      105  180  6  1. semester  da
+platforme in metode
+procesiranja
+2.  0082823  Računalniške storitve v  prof. dr.  45  20  10      105  180  6  1. semester  da
+|     | oblaku  | Branko  |     |     |     |     |     |     |     |     |
+| --- | ------- | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+Matjaž
+Jurič
+3.  0127827  Visoko zmogljivo  prof. dr.  45  10  20      105  180  6  2. semester  da
+|     | računanje  | Uroš Lotrič  |     |     |     |     |     |     |     |     |
+| --- | ---------- | ------------ | --- | --- | --- | --- | --- | --- | --- | --- |
+4.  0127828  Računalniški sistemi  prof. dr.  45    30      105  180  6  2. semester  da
+Branko Šter
+
+|     | Skupno  |     | 180  | 50  | 70  | 0   | 0   | 420  | 720  24  |     |
+| --- | ------- | --- | ---- | --- | --- | --- | --- | ---- | -------- | --- |
+IV. Omrežja in varnost (modul strokovno izbirnih predmetov )
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- |
+štud.
+1.  0082727  Kriptografija in  prof. dr.  45  10  20      105  180  6  1. semester,  da
+|     | računalniška  | Aleksandar  |     |     |     |     |     |     |     | 2. semester  |
+| --- | ------------- | ----------- | --- | --- | --- | --- | --- | --- | --- | ------------ |
+|     | varnost       | Jurišić     |     |     |     |     |     |     |     |              |
+2.  0082821  Informacijska  Denis Trček  45    30      105  180  6  1. semester  da
+varnost in
+zasebnost
+3.  0082824  Digitalna  izr. prof. dr.  45    30      105  180  6  2. semester  da
+|     | forenzika  | Andrej  |     |     |     |     |     |     |     |     |
+| --- | ---------- | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+Brodnik
+4.  0082617  Brezžična  prof. dr.  45  10  20      105  180  6  2. semester  da
+|     | senzorska omrežja  | Nikolaj Zimic  |      |     |      |     |     |      |          |     |
+| --- | ------------------ | -------------- | ---- | --- | ---- | --- | --- | ---- | -------- | --- |
+|     | Skupno             |                | 180  | 20  | 100  | 0   | 0   | 420  | 720  24  |     |
+V. Algoritmi in programska oprema (modul strokovno izbirnih predmetov )
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- |
+štud.
+1.  0082828  Komunikacija človek  doc. dr. Ciril  45    30      105  180  6  1. semester  da
+|     | računalnik  | Bohak, izr. prof.  |     |     |     |     |     |     |     |     |
+| --- | ----------- | ------------------ | --- | --- | --- | --- | --- | --- | --- | --- |
+dr. Luka
+Čehovin Zajc
+2.  0088108  Funkcijsko  prof. dr. Zoran  45  10  20      105  180  6  1. semester  da
+|     | programiranje  | Bosnić  |     |     |     |     |     |     |     |     |
+| --- | -------------- | ------- | --- | --- | --- | --- | --- | --- | --- | --- |
+3.  0148105  Aproksimacijski in  doc. dr. Uroš  45    30      105  180  6  2. semester  da
+|     | naključnostni  | Čibej  |     |     |     |     |     |     |     |     |
+| --- | -------------- | ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+algoritmi
+4.  0127821  Algoritmi  izr. prof. dr.  45  20  10      105  180  6  2. semester  da
+Andrej Brodnik
+|     | Skupno  |     | 180  | 30  | 90  | 0   | 0   | 420  | 720  24  |     |
+| --- | ------- | --- | ---- | --- | --- | --- | --- | ---- | -------- | --- |
+VI. Računske metode (modul strokovno izbirnih predmetov )
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- |
+
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     | vaje  | obl. štud.  |     | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | ----- | ----------- | --- | ----- | ------- | --- |
+1.  0075167  Skupinsko  izr. prof. dr.  45    30      105  180  6  1. semester  da
+vedenje  Iztok Lebar
+Bajec
+2.  0153519  Topološka  Žiga Virk  45  10  20      105  180  6  1. semester  da
+analiza
+podatkov
+3.  0574758  Numerična  Aljaž Zalar  45    30      105  180  6  1. semester,  da
+|     | matematika  |     |     |     |     |     |     |     |     |     | 2. semester  |
+| --- | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------ |
+4.  0082841  Diskretna  prof. dr.  45    30      105  180  6  2. semester  da
+matematika  Gašper Fijavž
+|     | Skupno  | 180  |     | 10  | 110  | 0   | 0   |     | 420  | 720  24  |     |
+| --- | ------- | ---- | --- | --- | ---- | --- | --- | --- | ---- | -------- | --- |
+VII. Metode računalniškega zaznavanja (modul strokovno izbirnih predmetov)
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- |
+štud.
+1.  0075159  Obdelava  Franc Jager  45    30      105  180  6  1. semester  da
+biomedicinskih
+signalov in slik
+2.  0075165   Slikovna biometrija  prof. dr.  45  10  20      105  180  6  1. semester  da
+Peter Peer
+3.  0148113  Obdelava naravnega  prof. dr.  45  10  20      105  180  6  2. semester  da
+jezika       Marko
+Robnik
+Šikonja
+4.  0075160  Napredne metode  prof. dr.  45  10  20      105  180  6  2. semester  da
+računalniškega vida  Matej Kristan
+|     | Skupno  |     | 180  | 30  |     | 90  | 0   | 0   | 420  | 720  | 24    |
+| --- | ------- | --- | ---- | --- | --- | --- | --- | --- | ---- | ---- | ----- |
+Ostali strokovni izbirni predmeti RI
+|     |     |     | Kontaktne ure  |     |     |     |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     |     |     | vaje  | obl.  | delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | --- | --- | ----- | ----- | ----- | ------- | --- |
+štud.
+1.  0075156  Zaznavanje v  Aleš  45    30      105  180  6  1. semester  da
+kognitivnih sistemih  Leonardis
+
+2.  0082831  Management  prof. dr.  45  10  20      105  180  6  1. semester  da
+|     | proizvodnih in        | Branko Matjaž  |     |     |     |     |     |     |
+| --- | --------------------- | -------------- | --- | --- | --- | --- | --- | --- |
+|     | storitvenih procesov  | Jurič          |     |     |     |     |     |     |
+3.  0082843  Poučevanje  prof. dr. Janez  45  20  10      105  180  6  1. semester  da
+|     | algoritmičnega  | Demšar  |     |     |     |     |     |     |
+| --- | --------------- | ------- | --- | --- | --- | --- | --- | --- |
+razmišljanja
+4.  0082861  Sodobne metode  prof. dr.  45  10  20      105  180  6  2. semester  da
+|     | razvoja programske  | Damjan    |     |     |     |     |     |     |
+| --- | ------------------- | --------- | --- | --- | --- | --- | --- | --- |
+|     | opreme              | Vavpotič  |     |     |     |     |     |     |
+5.  0127836  Velepodatki  izr. prof. dr.  45    30      105  180  6  2. semester  da
+Matjaž Kukar
+6.  0127837  Globoko učenje  prof. dr.  45    30      105  180  6  2. semester  da
+Danijel Skočaj
+7.  0643957  Mobilno zaznavanje  izr. prof. dr.  45    30      105  180  6  1. semester  da
+Veljko Pejović
+8.  0643899  Računalništvo v megli  Vlado  45    30      105  180  6  2. semester  da
+|     | za pametne storitve  | Stankovski  |     |     |     |     |     |     |
+| --- | -------------------- | ----------- | --- | --- | --- | --- | --- | --- |
+9.  0070555  Izbrana poglavja iz  izr. prof. dr.  45    30      105  180  6  2. semester  da
+|     | računalništva in  | Slavko Žitnik  |     |     |     |     |     |     |
+| --- | ----------------- | -------------- | --- | --- | --- | --- | --- | --- |
+informatike
+10.  0070593  Raziskovalni seminar  izr. prof. dr.  15  45        300  360  12  1. semester  da
+Slavko Žitnik
+11.  0125916  Aktualno  prof. dr. Matej  45  10  20      105  180  6  1. semester  da
+|     | raziskovalno področje  | Kristan  |     |     |     |     |     |     |
+| --- | ---------------------- | -------- | --- | --- | --- | --- | --- | --- |
+1
+12.  0125917  Aktualno  prof. dr. Matej  45  10  20      105  180  6  2. semester  da
+|     | raziskovalno področje  | Kristan  |     |     |     |     |     |     |
+| --- | ---------------------- | -------- | --- | --- | --- | --- | --- | --- |
+2
+|     | Skupno  |     | 510  | 105  | 270  0  | 0  1455  | 2340  78  |     |
+| --- | ------- | --- | ---- | ---- | ------- | -------- | --------- | --- |
+Splošno izbirni predmeti
+|     |     |     | Kontaktne ure  |     |     |     |     |     |
+| --- | --- | --- | -------------- | --- | --- | --- | --- | --- |
+  Koda  Ime  Nosilci  Predavanja  Seminarji  Vaje  Klinične  Druge  Samostojno  Ure  ECTS  Semestri  Izbirni
+| UL  |     |     |     |     | vaje  | obl.  delo  | skupaj  |     |
+| --- | --- | --- | --- | --- | ----- | ----------- | ------- | --- |
+štud.
+1.  0125918  Obštudijska  izr. prof. dr.  5        40  45  90  3  1. semester,  da
+|     | strokovna  | Slavko Žitnik  |     |     |     |     |     | 2. semester  |
+| --- | ---------- | -------------- | --- | --- | --- | --- | --- | ------------ |
+dejavnost 1
+
+2.  0125919  Obštudijska  izr. prof. dr.  5        40  45  90  3  1. semester,  da
+|     | strokovna  | Slavko Žitnik  |     |     |     |     |     | 2. semester  |
+| --- | ---------- | -------------- | --- | --- | --- | --- | --- | ------------ |
+dejavnost 2
+3.  0070559  Podatkovno  prof. dr.  45    30      105  180  6  1. semester,  da
+|     | rudarjenje in  | Marko   |     |     |     |     |     | 2. semester  |
+| --- | -------------- | ------- | --- | --- | --- | --- | --- | ------------ |
+|     | vizualizacija  | Robnik  |     |     |     |     |     |              |
+Šikonja
+|     | Skupno  |     | 55  | 0   | 30  0  | 80  195  | 360  12  |     |
+| --- | ------- | --- | --- | --- | ------ | -------- | -------- | --- |

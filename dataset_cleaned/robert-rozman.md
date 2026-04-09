@@ -1,0 +1,61 @@
+---
+title: Robert Rozman
+source: https://fri.uni-lj.si/sl/o-fakulteti/osebje/robert-rozman
+---
+
+Osebje
+
+Povezave
+
+viš. pred. dr. Robert Rozman
+
+Asistent
+
+T:
++386 1 479 8202
+
+E:Pošljite sporočilo
+
+Vaš email \*
+
+Vaše sporočilo \*
+
+Govorilne ure:
+Torek ob 13:15 ali po dogovoru (e-mail), lahko na daljavo (MSTeams). Zaželjena najava (email).
+
+Prostor:
+R2.50 - Kabinet
+
+Opis
+
+Sem predavatelj in asistent na Fakulteti za računalništvo in informatiko, kjer vodim predavanja in laboratorijske vaje pri predmetih Računalniška arhitektura, Organizacija računalnikov in Vhodno izhodne naprave (vsi UNI,VS).
+
+Raziskovalno se ukvarjam s področji arhitekture in organizacije računalnikov, vgrajenih sistemov, tvorbe, razpoznavanja in procesiranja govornih signalov, govornih uporabniških vmesnikov in sodobnih govornih komunikacij (spletne telefonije in širše področje konvergenčnih komunikacijskih tehnologij).
+
+Izobrazba
+
+Srednja elektro-računalniška šola v Mariboru (SERŠ). Diploma, magisterij in doktorat na Fakulteti za računalništvo in informatiko, Univerza v Ljubljani.
+
+Predmeti
+
+* [Organizacija računalnikov](/sl/predmet/63717)
+* [Vhodno-izhodne naprave](/sl/predmet/63728)
+* [Digitalno procesiranje signalov](/sl/predmet/63744)
+
+Laboratorij
+
+* [**Laboratorij za algoritmiko**, Član laboratorija](/sl/laboratorij/la-216)
+
+Projekti
+
+* [CC Chip.si - CC Chip.si - Slovenski kompetenčni center za čipe in polprevodniške tehnologije](/sl/projekti/2791)  
+  (CC Chip.si), 01.03.2025 - 28.02.2029
+
+Zaključeni projekti
+
+* [PKP 3 - Video meritve dolžin smučarskih skokov](/sl/projekti/385)  
+  Projekti strukturnih skladov(PKP 3), 01.03.2017 - 31.07.2017
+
+Več
+
+![](/sites/all/modules/custom/osebje/images/arrowDown_11.png)
