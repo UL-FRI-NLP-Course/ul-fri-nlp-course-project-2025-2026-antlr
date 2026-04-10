@@ -45,7 +45,7 @@ fi
 # copy example and warn user
 if [ ! -f ".env" ]; then
     echo "No .env file found. Creating example one ..."
-    cp .env.example .env
+    cp example.env .env
 fi
 # Extract passwrd and db from .env TIMESCALE_SERVICE_URL and set env vars for Postgres
 DB_NAME=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2- | sed -E 's/.*\/([^?]+).*/\1/')
