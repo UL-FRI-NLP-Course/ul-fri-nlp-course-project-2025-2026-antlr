@@ -23,13 +23,17 @@ for idx, row in results.iterrows():
     print(f"   Content: {content}...")
     print("-" * 20)
 
-response = Synthesizer.generate_response(question=relevant_question, context=results)
-
-print(f"\n{response.answer}")
-print("\nThought process:")
-for thought in response.thought_process:
-    print(f"- {thought}")
-print(f"\nContext: {response.enough_context}")
+print("===============")
+response = Synthesizer.generate_response(question=relevant_question, context=results)[0]['generated_text']
+print("Vprašanje: %s"%response[-2]['content'])
+print("Odgovor: %s"%response[-1]['content'])
+print("===============")
+# TODO: response with thought process?
+# print(f"\n{response.answer}")
+# print("\nThought process:")
+# for thought in response.thought_process:
+#     print(f"- {thought}")
+# print(f"\nContext: {response.enough_context}")
 
 # --------------------------------------------------------------
 # Irrelevant question
@@ -39,13 +43,19 @@ irrelevant_question = "Kakšno je vreme v Ljubljani?"
 
 results = vec.search(irrelevant_question, limit=3)
 
-response = Synthesizer.generate_response(question=irrelevant_question, context=results)
+# response = Synthesizer.generate_response(question=irrelevant_question, context=results)
+print("===============")
+response = Synthesizer.generate_response(question=irrelevant_question, context=results)[0]['generated_text']
+print("Vprašanje: %s"%response[-2]['content'])
+print("Odgovor: %s"%response[-1]['content'])
+print("===============")
 
-print(f"\n{response.answer}")
-print("\nThought process:")
-for thought in response.thought_process:
-    print(f"- {thought}")
-print(f"\nContext: {response.enough_context}")
+# TODO: response with thought process?
+# print(f"\n{response.answer}")
+# print("\nThought process:")
+# for thought in response.thought_process:
+#     print(f"- {thought}")
+# print(f"\nContext: {response.enough_context}")
 
 # --------------------------------------------------------------
 # Metadata filtering

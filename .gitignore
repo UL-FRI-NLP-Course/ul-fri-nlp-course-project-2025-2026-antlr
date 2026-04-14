@@ -149,3 +149,8 @@ logs/
 /convert_pdfs.py
 /clean_md.py
 /clean_pdfs.py
+
+
+# some test stuff
+run_gams_demo_on_gpu.sh
+src/rag/app/gams_demo.py

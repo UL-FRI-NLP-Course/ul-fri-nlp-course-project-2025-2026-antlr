@@ -3,7 +3,8 @@ from typing import List
 import pandas as pd
 from pydantic import BaseModel, Field
 
-from services.llm_factory import LLMFactory
+# from services.llm_factory import LLMFactory
+from services.gams import MODEL_OBJECT as llm # import gams object
 
 
 class SynthesizedResponse(BaseModel):
@@ -51,19 +52,28 @@ class Synthesizer:
         )
 
         messages = [
-            {"role": "system", "content": Synthesizer.SYSTEM_PROMPT},
+            {"role": "user", "content": "You are given the following system prompt: %s"%Synthesizer.SYSTEM_PROMPT},
+            {"role": "assistant", "content": ""},
+            {"role": "user", "content": "%s"%(context_str)},
+            {"role": "assistant", "content": ""},
             {"role": "user", "content": f"# User question:\n{question}"},
-            {
-                "role": "assistant",
-                "content": f"# Retrieved information:\n{context_str}",
-            },
         ]
+        # messages = [
+        #     {"role": "system", "content": Synthesizer.SYSTEM_PROMPT},
+        #     {"role": "user", "content": f"# User question:\n{question}"},
+        #     {
+        #         "role": "assistant",
+        #         "content": f"# Retrieved information:\n{context_str}",
+        #     },
+        # ]
 
-        llm = LLMFactory("llama")
-        return llm.create_completion(
-            response_model=SynthesizedResponse,
-            messages=messages,
-        )
+        # TODO: should return 'completion'
+        # llm = LLMFactory("llama")
+        # return llm.create_completion(
+        #     response_model=SynthesizedResponse,
+        #     messages=messages,
+        # )
+        return llm.get_response(messages=messages)
 
     @staticmethod
     def dataframe_to_json(
