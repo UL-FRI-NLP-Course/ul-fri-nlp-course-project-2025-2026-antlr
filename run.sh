@@ -122,6 +122,29 @@ echo -e ""
 echo -e "[${log_label}] Running similarity search script..."
 python src/rag/app/similarity_search.py
 
+
+echo "                                                                                                              ";
+echo " ▄▄▄▄▄▄                 ▄▄▄▄                                                     ▄▄▄▄▄▄                       ";
+echo " ██▀▀▀▀██              ██▀▀▀                                   ██                ██▀▀▀▀██              ██     ";
+echo " ██    ██   ▄████▄   ███████    ▄████▄    ██▄████   ▄█████▄  ███████             ██    ██   ▄████▄   ███████  ";
+echo " ███████   ██▄▄▄▄██    ██      ██▄▄▄▄██   ██▀       ▀ ▄▄▄██    ██                ███████   ██▀  ▀██    ██     ";
+echo " ██  ▀██▄  ██▀▀▀▀▀▀    ██      ██▀▀▀▀▀▀   ██       ▄██▀▀▀██    ██                ██    ██  ██    ██    ██     ";
+echo " ██    ██  ▀██▄▄▄▄█    ██      ▀██▄▄▄▄█   ██       ██▄▄▄███    ██▄▄▄             ██▄▄▄▄██  ▀██▄▄██▀    ██▄▄▄  ";
+echo " ▀▀    ▀▀▀   ▀▀▀▀▀     ▀▀        ▀▀▀▀▀    ▀▀        ▀▀▀▀ ▀▀     ▀▀▀▀             ▀▀▀▀▀▀▀     ▀▀▀▀       ▀▀▀▀  ";
+echo "                                                                                                              ";
+echo "                                                                                                              ";
+
+
+HOST=$(hostname)
+PORT=8080
+
+echo "SSH tunnel command:"
+echo "ssh -L $PORT:$HOST:$PORT $USER@$(hostname -f | cut -d'.' -f2-)"
+echo ""
+echo "Then open: http://localhost:$PORT"
+python src/rag/app/server.py --port $PORT
+
+
 # SHUTDOWN AND PERSIST
 echo -e "[${log_label}] Shutting down Postgres cleanly..."
 # Using pg_ctl stop ensures all data is flushed to disk before we copy it

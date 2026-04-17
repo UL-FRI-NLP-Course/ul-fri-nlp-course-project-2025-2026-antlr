@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat</title>
+
+        <style>
+            body {
+                font-family: sans-serif;
+                max-width: 800px;
+                margin: auto;
+            }
+            #chat {
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Chat</h2>
+
+        <div id="chat"></div>
+
+        <textarea id="input" rows="4"></textarea>
+        <br />
+        <button onclick="send()">Send</button>
+
+        <script>
+            let messages = JSON.parse(localStorage.getItem("chat") || "[]");
+
+            render();
+
+            async function send() {
+                const input = document.getElementById("input");
+
+                messages.push({
+                    role: "user",
+                    content: input.value,
+                });
+
+                render();
+
+                const r = await fetch("/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        model: "local",
+                        messages: messages,
+                    }),
+                });
+
+                const data = await r.json();
+
+                const reply = data.choices[0].message.content;
+
+                messages.push({
+                    role: "assistant",
+                    content: reply,
+                });
+
+                localStorage.setItem("chat", JSON.stringify(messages));
+
+                input.value = "";
+
+                render();
+            }
+
+            function render() {
+                const chat = document.getElementById("chat");
+
+                chat.innerHTML = messages
+                    .map((m) => `<p><b>${m.role}:</b> ${m.content}</p>`)
+                    .join("");
+            }
+        </script>
+    </body>
+</html>

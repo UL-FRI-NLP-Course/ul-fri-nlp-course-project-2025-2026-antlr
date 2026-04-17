@@ -97,3 +97,5 @@ urllib3==2.6.3
 yarl==1.22.0
 zipp==3.23.0
 accelerate
+fastapi==0.128.8
+uvicorn==0.39.0
