@@ -9,6 +9,7 @@
 #SBATCH --time=03:00:00
 #SBATCH --output=logs/db_log.log
 
+# Big text je bil narjen z https://fsymbols.com/generators/tarty/
 
 # label:
 GREEN='\033[0;32m'
@@ -82,7 +83,16 @@ echo -e "[${log_label}] Waiting for Postgres to start up ..."
 until apptainer exec timescaledb.sif pg_isready -h localhost -U postgres; do
     sleep 2
 done
-echo -e "[${log_label}] Postgres is READY!"
+echo ""
+echo ""
+echo "██████╗░██████╗░  ██████╗░███████╗░█████╗░██████╗░██╗░░░██╗"
+echo "██╔══██╗██╔══██╗  ██╔══██╗██╔════╝██╔══██╗██╔══██╗╚██╗░██╔╝"
+echo "██║░░██║██████╦╝  ██████╔╝█████╗░░███████║██║░░██║░╚████╔╝░"
+echo "██║░░██║██╔══██╗  ██╔══██╗██╔══╝░░██╔══██║██║░░██║░░╚██╔╝░░"
+echo "██████╔╝██████╦╝  ██║░░██║███████╗██║░░██║██████╔╝░░░██║░░░"
+echo "╚═════╝░╚═════╝░  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░░░░╚═╝░░░"
+echo ""
+echo ""
 
 # Setup Connection string
 BASE_URL=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2-)
@@ -91,11 +101,21 @@ if [[ "$BASE_URL" == *"?"* ]]; then
 else
     export TIMESCALE_SERVICE_URL="${BASE_URL}?host=$PGSOCKET_LOCAL"
 fi
-echo -e "Connection string updated with dynamic socket: $TIMESCALE_SERVICE_URL"
+# echo -e "Connection string updated with dynamic socket: $TIMESCALE_SERVICE_URL"
 
 # Check if .venv exists, otherwise create it and install requirements
 if [ ! -d ".venv" ]; then
     echo -e "[${log_label}] Creating virtual environment and installing requirements..."
+    echo " "
+    echo " "
+    echo " ░█████╗░██████╗░███████╗░█████╗░████████╗██╗███╗░░██╗░██████╗░  ██╗░░░██╗███████╗███╗░░██╗██╗░░░██╗"
+    echo " ██╔══██╗██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║████╗░██║██╔════╝░  ██║░░░██║██╔════╝████╗░██║██║░░░██║"
+    echo " ██║░░╚═╝██████╔╝█████╗░░███████║░░░██║░░░██║██╔██╗██║██║░░██╗░  ╚██╗░██╔╝█████╗░░██╔██╗██║╚██╗░██╔╝"
+    echo " ██║░░██╗██╔══██╗██╔══╝░░██╔══██║░░░██║░░░██║██║╚████║██║░░╚██╗  ░╚████╔╝░██╔══╝░░██║╚████║░╚████╔╝░"
+    echo " ╚█████╔╝██║░░██║███████╗██║░░██║░░░██║░░░██║██║░╚███║╚██████╔╝  ░░╚██╔╝░░███████╗██║░╚███║░░╚██╔╝░░"
+    echo " ░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░  ░░░╚═╝░░░╚══════╝╚═╝░░╚══╝░░░╚═╝░░░"
+    echo " "
+    echo " "
     python -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
@@ -112,34 +132,37 @@ apptainer exec timescaledb.sif psql -h localhost -U postgres -d $DB_NAME -c "CRE
 # Run Fill Script if required
 if [ "$RUN_INSERT" = true ]; then
     echo -e "[${log_label}] Filling db with script..."
+    echo ""
+    echo "█▀▀ █ █░░ █░░ █ █▄░█ █▀▀   █▀▄ ▄▀█ ▀█▀ ▄▀█ █▄▄ ▄▀█ █▀ █▀▀"
+    echo "█▀░ █ █▄▄ █▄▄ █ █░▀█ █▄█   █▄▀ █▀█ ░█░ █▀█ █▄█ █▀█ ▄█ ██▄"
+    echo ""
     python src/rag/app/insert_vectors.py
 fi
 
 # EXAMPLE: TODO: Similarity Search
 echo -e "[${log_label}] -=-=-=-= Successfully set up database and environment! =-=-=-=-"
-echo -e ""
-echo -e ""
-echo -e "[${log_label}] Running similarity search script..."
-python src/rag/app/similarity_search.py
+# echo -e ""
+# echo -e ""
+# echo -e "[${log_label}] Running similarity search script..."
+# python src/rag/app/similarity_search.py
 
 
-echo "                                                                                                              ";
-echo " ▄▄▄▄▄▄                 ▄▄▄▄                                                     ▄▄▄▄▄▄                       ";
-echo " ██▀▀▀▀██              ██▀▀▀                                   ██                ██▀▀▀▀██              ██     ";
-echo " ██    ██   ▄████▄   ███████    ▄████▄    ██▄████   ▄█████▄  ███████             ██    ██   ▄████▄   ███████  ";
-echo " ███████   ██▄▄▄▄██    ██      ██▄▄▄▄██   ██▀       ▀ ▄▄▄██    ██                ███████   ██▀  ▀██    ██     ";
-echo " ██  ▀██▄  ██▀▀▀▀▀▀    ██      ██▀▀▀▀▀▀   ██       ▄██▀▀▀██    ██                ██    ██  ██    ██    ██     ";
-echo " ██    ██  ▀██▄▄▄▄█    ██      ▀██▄▄▄▄█   ██       ██▄▄▄███    ██▄▄▄             ██▄▄▄▄██  ▀██▄▄██▀    ██▄▄▄  ";
-echo " ▀▀    ▀▀▀   ▀▀▀▀▀     ▀▀        ▀▀▀▀▀    ▀▀        ▀▀▀▀ ▀▀     ▀▀▀▀             ▀▀▀▀▀▀▀     ▀▀▀▀       ▀▀▀▀  ";
-echo "                                                                                                              ";
-echo "                                                                                                              ";
-
+echo ""
+echo ""
+echo "██████╗░███████╗███████╗███████╗██████╗░░█████╗░████████╗  ██████╗░░█████╗░████████╗"
+echo "██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗╚══██╔══╝  ██╔══██╗██╔══██╗╚══██╔══╝"
+echo "██████╔╝█████╗░░█████╗░░█████╗░░██████╔╝███████║░░░██║░░░  ██████╦╝██║░░██║░░░██║░░░"
+echo "██╔══██╗██╔══╝░░██╔══╝░░██╔══╝░░██╔══██╗██╔══██║░░░██║░░░  ██╔══██╗██║░░██║░░░██║░░░"
+echo "██║░░██║███████╗██║░░░░░███████╗██║░░██║██║░░██║░░░██║░░░  ██████╦╝╚█████╔╝░░░██║░░░"
+echo "╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═════╝░░╚════╝░░░░╚═╝░░░"
+echo ""
+echo ""
 
 HOST=$(hostname)
 PORT=8080
 
 echo "SSH tunnel command:"
-echo "ssh -L $PORT:$HOST:$PORT $USER@$(hostname -f | cut -d'.' -f2-)"
+echo "ssh -L $PORT:$HOST:$PORT $USER@hpc-login.arnes.si"
 echo ""
 echo "Then open: http://localhost:$PORT"
 python src/rag/app/server.py --port $PORT
