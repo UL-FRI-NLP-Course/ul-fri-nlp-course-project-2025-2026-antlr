@@ -61,6 +61,7 @@ fi
 DB_NAME=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2- | sed -E 's/.*\/([^?]+).*/\1/')
 DB_USER=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2- | sed -E 's/.*\/\/([^:]+):.*/\1/')
 DB_PASS=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2- | sed -E 's/.*\/\/[^:]+:([^@]+)@.*/\1/')
+DB_TABLE=$(grep '^TIMESCALE_SERVICE_URL=' .env | cut -d '=' -f2- | sed -E 's/.*\/([^?]+).*/\1/')
 
 # Start Postgres in background (also lower max memory allocation)
 apptainer run \
@@ -106,7 +107,7 @@ fi
 source .venv/bin/activate
 
 # Install extensions
-apptainer exec timescaledb.sif psql -h localhost -U postgres -d postgres -c "CREATE EXTENSION IF NOT EXISTS vector; CREATE EXTENSION IF NOT EXISTS timescaledb;"
+apptainer exec timescaledb.sif psql -h localhost -U postgres -d $DB_NAME -c "CREATE EXTENSION IF NOT EXISTS vector; CREATE EXTENSION IF NOT EXISTS timescaledb;"
 
 # Run Fill Script if required
 if [ "$RUN_INSERT" = true ]; then

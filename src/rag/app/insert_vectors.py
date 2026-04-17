@@ -25,9 +25,9 @@ vec.create_index()
 # Read the CSV file
 # df = pd.read_csv("src/rag/data/faq_dataset.csv", sep=";")
 
-RAW_DATA_DIR = "dataset_raw"
+DATASET_DIR = "dataset/cleaned"
 # How many chunks to embed and insert at once
-BATCH_SIZE = 50
+BATCH_SIZE = 2048
 # Max characters per chunk
 CHUNK_SIZE = 1500
 CHUNK_OVERLAP = 200
@@ -98,7 +98,7 @@ def get_markdown_chunks(file_path: Path):
 # vec.upsert(records_df)
 
 
-raw_path = Path(RAW_DATA_DIR)
+raw_path = Path(DATASET_DIR)
 all_md_files = list(raw_path.glob("**/*.md"))
 records_to_upsert = []
 
