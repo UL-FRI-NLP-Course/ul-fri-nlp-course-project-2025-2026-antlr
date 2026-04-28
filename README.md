@@ -55,6 +55,8 @@ Running server on 0.0.0.0:8080
 
 you are ready to go. Run the tunnel command and navigate to http://localhost:8080 to access the chatbot interface.
 
+[Zaslonski_video_20260428_180534.webm](https://github.com/user-attachments/assets/f1a1b2a2-4ad5-4d21-a416-f5881379a9d8)
+
 
 
 ## Project status
