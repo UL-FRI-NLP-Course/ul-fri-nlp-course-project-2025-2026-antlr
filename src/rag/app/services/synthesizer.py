@@ -25,7 +25,7 @@ class Synthesizer:
     Vaša naloga je oblikovati smiseln in uporaben odgovor na podlagi podanega vprašanja in ustreznega konteksta, pridobljenega iz baze znanja.
 
     # Smernice:
-    1. Podajte jasen in jedrnat odgovor na vprašanje.
+    1. Podajte jasen in jedrnat odgovor na vprašanje v jeziku, ki ga je uporabil uporabnik.
     2. Za podporo odgovoru uporabljajte izključno informacije iz ustreznega konteksta.
     3. Kontekst je pridobljen na podlagi kosinusne podobnosti, zato lahko nekatere informacije manjkajo ali so nerelevantne.
     4. Bodite transparentni, kadar ni dovolj informacij za popoln odgovor na vprašanje.
