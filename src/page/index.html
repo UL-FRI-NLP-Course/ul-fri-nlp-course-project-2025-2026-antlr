@@ -555,6 +555,52 @@
                 });
             }
 
+            async function simulateStreaming(reply) {
+                // Create empty assistant message
+                const msg = {
+                    role: "assistant",
+                    content: "",
+                    time: getTime(),
+                };
+
+                messages.push(msg);
+
+                // Render once to create DOM node
+                render(true);
+
+                const wrappers = document.querySelectorAll(
+                    ".message-wrapper.assistant .message",
+                );
+
+                const messageEl = wrappers[wrappers.length - 1];
+
+                // Tokenization (word-level works best)
+                const tokens = reply.match(/\S+\s*/g) || [];
+
+                let buffer = "";
+
+                for (let i = 0; i < tokens.length; i++) {
+                    buffer += tokens[i];
+
+                    // Re-render markdown periodically
+                    if (i % 6 === 0 || i === tokens.length - 1) {
+                        const rawHTML = marked.parse(buffer);
+                        const cleanHTML = DOMPurify.sanitize(rawHTML);
+
+                        messageEl.innerHTML = cleanHTML;
+
+                        // Keep scroll pinned
+                        chatEl.scrollTop = chatEl.scrollHeight;
+                    }
+
+                    await new Promise((r) =>
+                        setTimeout(r, 32 + Math.random() * 8),
+                    );
+                }
+
+                msg.content = buffer;
+            }
+
             async function sendMessage() {
                 let povedi = fetchMessages();
                 const text = inputEl.value.trim();
@@ -586,11 +632,22 @@
                     messages.pop(); // Remove typing indicator
 
                     const reply = data.choices[0].message.content;
-                    messages.push({
-                        role: "assistant",
-                        content: reply,
-                        time: getTime(),
-                    });
+
+                    // Stop loading animation BEFORE streaming starts
+                    stopLoadingAnimation();
+
+                    const fakeStreaming = false;
+                    if (fakeStreaming) {
+                        // Simulate streaming
+                        await simulateStreaming(reply);
+                    } else {
+                        const reply = data.choices[0].message.content;
+                        messages.push({
+                            role: "assistant",
+                            content: reply,
+                            time: getTime(),
+                        });
+                    }
 
                     localStorage.setItem("chat", JSON.stringify(messages));
                 } catch (error) {
@@ -603,7 +660,7 @@
                         time: getTime(),
                     });
                 } finally {
-                    stopLoadingAnimation();
+                    //stopLoadingAnimation();
                     isAwaitingResponse = false;
                     render(true);
                 }
