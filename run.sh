@@ -164,7 +164,7 @@ PORT=8080
 echo "SSH tunnel command:"
 echo "ssh -L $PORT:$HOST:$PORT $USER@hpc-login.arnes.si"
 echo ""
-echo "Then open: http://localhost:$PORT"
+echo "Wait for the server to start, then open: http://localhost:$PORT"
 python src/rag/app/server.py --port $PORT
 
 

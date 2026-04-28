@@ -22,6 +22,36 @@ Please run the script
 sbatch run.sh
 ```
 
+Once you see the following text appear:
+```
+██████╗░███████╗███████╗███████╗██████╗░░█████╗░████████╗  ██████╗░░█████╗░████████╗
+██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗╚══██╔══╝  ██╔══██╗██╔══██╗╚══██╔══╝
+██████╔╝█████╗░░█████╗░░█████╗░░██████╔╝███████║░░░██║░░░  ██████╦╝██║░░██║░░░██║░░░
+██╔══██╗██╔══╝░░██╔══╝░░██╔══╝░░██╔══██╗██╔══██║░░░██║░░░  ██╔══██╗██║░░██║░░░██║░░░
+██║░░██║███████╗██║░░░░░███████╗██║░░██║██║░░██║░░░██║░░░  ██████╦╝╚█████╔╝░░░██║░░░
+╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░  ╚═════╝░░╚════╝░░░░╚═╝░░░
+
+
+SSH tunnel command:
+ssh -L 8080:wn203.arnes.si:8080 sh8397@hpc-login.arnes.si
+
+Then open: http://localhost:8080
+init GaMS model
+Loading checkpoint shards: 100%|██████████|
+Device set to use cuda
+2026-04-28 17:40:50,118 - INFO - Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+2026-04-28 17:40:55,809 - INFO - Load pretrained SentenceTransformer: intfloat/multilingual-e5-base
+INFO:     Started server process [2438809]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+Running server on 0.0.0.0:8080
+
+```
+
+you are ready to go. Run the tunnel command and navigate to http://localhost:8080 to access the chatbot interface.
+
+
 
 ## Project status
 
