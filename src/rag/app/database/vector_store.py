@@ -17,7 +17,8 @@ class VectorStore:
         """Initialize the VectorStore with settings, multilingual bert client, and Timescale Vector client."""
         self.settings = get_settings()
         self.embedding_model = SentenceTransformer(
-            "intfloat/multilingual-e5-base", device="cuda"
+            "intfloat/multilingual-e5-base",
+            device="cuda",  ## todo test gemma embedding 300m ali bge-m3
         )
         self.vector_settings = self.settings.vector_store
         self.vec_client = client.Sync(
