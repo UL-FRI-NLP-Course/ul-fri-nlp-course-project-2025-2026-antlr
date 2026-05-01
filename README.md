@@ -62,6 +62,7 @@ you are ready to go. Run the tunnel command and navigate to http://localhost:808
 ## Project status
 
 * 20/03/2026: [Report #1](./report/report-1.pdf)
+* 01/05/2026: [Report #2](./report/report-2.pdf)
 
 
 ## Related Work
