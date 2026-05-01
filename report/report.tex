@@ -216,9 +216,14 @@ while Figure \ref{fig:ui_chat} demonstrates a successful retrieval and synthesis
 
 % %------------------------------------------------
 
-% \section*{Discussion}
+\section*{Discussion}
+Our implementation of ReferatBot demonstrates that a localized RAG pipeline is highly effective for Slovenian academic administration.
+However, several areas for improvement remain.
 
-% Use the Discussion section to objectively evaluate your work, do not just put praise on everything you did, be critical and exposes flaws and weaknesses of your solution. You can also explain what you would do differently if you would be able to start again and what upgrades could be done on the project in the future.
+\subsection*{Performance and Limitations}
+While the \textbf{intfloat/multilingual-e5-base} model provides good foundations for vector search, we may get even better
+results with \textbf{gemma-embedding-300m} or \textbf{bge-m3}. The current chunking strategy, which splits documents at paragraph boundaries, occasionally results in semantically disjoint chunks.
+A more sophisticated chunking method, could improve the quality of retrieved information.
 
 
 % %------------------------------------------------
