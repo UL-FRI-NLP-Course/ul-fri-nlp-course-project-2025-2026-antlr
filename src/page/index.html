@@ -381,6 +381,36 @@
                 stroke: currentColor;
                 stroke-width: 2;
             }
+
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 15px;
+                border-radius: 5px;  
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%; 
+                background: #DA291C;
+                cursor: pointer;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background: #DA291C;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -391,6 +421,15 @@
                     <div>
                         <h2 class="header-title">ReferatBot</h2>
                         <p class="header-subtitle">AI Študentski Asistent</p>
+                    </div>
+                </div>
+
+                <div style="display:inline-flex; align-items: center;">
+                    <div>
+                        <input type="range" min="0" max="100" value="70" class="slider" id="tempRange">
+                    </div>
+                    <div style="width: 100px; padding-left: 10px;">
+                        <span>T:<span id="tempValue"></span></span>
                     </div>
                 </div>
 
@@ -526,6 +565,13 @@
             const inputEl = document.getElementById("input");
             let isAwaitingResponse = false;
 
+            let tempSlider = document.getElementById("tempRange")
+            let tempValue = document.getElementById("tempValue")
+            tempValue.innerHTML = tempSlider.value/100
+            tempSlider.oninput = function(){
+                tempValue.innerHTML = this.value/100
+            }
+
             initTheme();
             inputEl.focus();
             render();
@@ -625,6 +671,7 @@
                         body: JSON.stringify({
                             model: "local",
                             messages: messages.filter((m) => !m.isTyping),
+                            temperature: tempSlider.value/100,
                         }),
                     });
 

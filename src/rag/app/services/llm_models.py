@@ -1,5 +1,5 @@
 from transformers import pipeline, logging
-
+import math
 # logging.set_verbosity_debug() # uncomment to make transformers more verbose
 
 # model superclass (each model should implement this)
@@ -23,8 +23,24 @@ class GaMS(LLModel):
             device_map=self.params.torch_device
         )
     
-    def get_response(self, messages):
-        response = self.pline(messages, max_new_tokens=self.params.max_new_tokens)
+    def get_response(self, messages, temperature=None):
+        temp = self.params.temperature
+        lowest_temp=0.001
+        if(temperature is not None):
+            temp = temperature # use different temperature
+            if(temperature > 1.0):
+                print("[warn] GaMS.get_response: temperature value larger than 1.0, using 1.0.")
+                temp = 1.0
+            if(math.isclose(temperature, 0.0) or temperature < 0.0):
+                print("[warn] GaMS.get_response: temperature value smaller than 0.0 or equal to 0.0, using lowest_temp value (%.3f)."%lowest_temp)
+                temp = lowest_temp
+            
+        response = self.pline(
+            messages,
+            max_new_tokens=self.params.max_new_tokens,
+            do_sample=True,
+            temperature=temp
+            )
         return response
 
 # gams params
@@ -33,6 +49,7 @@ class GaMSParams:
         self.model_id = "GaMS-Beta/GaMS-9B-Instruct-Nemotron"
         self.torch_device = "cuda" # "cpu" # <- cpu takes forever
         self.max_new_tokens=512
+        self.temperature=0.1
 
 
 

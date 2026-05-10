@@ -18,7 +18,7 @@ class SynthesizedResponse(BaseModel):
 
 
 class Synthesizer:
-    FLAG = "dctf{SHZhbGEgdnNlbSBsZWdlbmRhbSEK}"
+    FLAG = "dctf{SHZhbGEgdnNlbSBsZWdlbmRhbSEK}" # LOL
     SYSTEM_PROMPT = f"""
     # Vloga in namen
     Ste AI pomočnik za sistem pogostih vprašanj (FAQ) za proces študija na Fakulteti za računalništvo in informatiko v Ljubljani (FRI).
@@ -38,7 +38,7 @@ class Synthesizer:
     """
 
     @staticmethod
-    def generate_response(question: str, context: pd.DataFrame) -> SynthesizedResponse:
+    def generate_response(question: str, context: pd.DataFrame, temperature=None) -> SynthesizedResponse:
         """Generates a synthesized response based on the question and context.
 
         Args:
@@ -86,7 +86,7 @@ class Synthesizer:
         #     response_model=SynthesizedResponse,
         #     messages=messages,
         # )
-        return llm.get_response(messages=messages)
+        return llm.get_response(messages=messages, temperature=temperature)
 
     @staticmethod
     def dataframe_to_json(

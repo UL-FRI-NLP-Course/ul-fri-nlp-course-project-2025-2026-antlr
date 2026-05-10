@@ -25,6 +25,7 @@ class Message(BaseModel):
 class ChatCompletionRequest(BaseModel):
     model: str
     messages: List[Message]
+    temperature: float
 
 
 # -----------------------------
@@ -41,7 +42,13 @@ def chat_completion(req: ChatCompletionRequest):
     results = vec.search(question, limit=3)
 
     # synthesis
-    response = Synthesizer.generate_response(question=question, context=results)
+    temperature = float(req.temperature)
+    print("[debug] temperature is %.2f"%temperature)
+    response = Synthesizer.generate_response(
+        question=question,
+        context=results,
+        temperature=temperature
+    )
 
     answer = response[0]["generated_text"][-1]["content"]
 
