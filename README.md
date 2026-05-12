@@ -19,10 +19,11 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 
 ## Install and run
 
-Please run the script
+Clone the repo in a fresh new folder and then please run the script
 
 ```bash
 sbatch run.sh
+tail -f logs/db_log.log
 ```
 
 Once you see the following text appear:
@@ -37,7 +38,7 @@ Once you see the following text appear:
 
 
 SSH tunnel command:
-ssh -L 8080:wn203.arnes.si:8080 sh8397@hpc-login.arnes.si
+ssh -L 8080:wn203.arnes.si:8080 username@hpc-login.arnes.si
 
 Then open: http://localhost:8080
 init GaMS model
@@ -53,7 +54,14 @@ Running server on 0.0.0.0:8080
 
 ```
 
-you are ready to go. Run the tunnel command and navigate to http://localhost:8080 to access the chatbot interface.
+you are ready to go.
+Open a new **local* terminal on your machine and copy the tunnel command *from the logs*:
+```bash
+ssh -L 8080:wnNodeNumber.arnes.si:8080 username@hpc-login.arnes.si  # Make sure to copy command from the log, not from here!
+```
+If you are using Windows, you can use [PuTTY](https://www.putty.org/) or [MobaXterm](https://mobaxterm.mobatek.net/) to create the tunnel.
+
+After that command navigate to http://localhost:8080 to access the chatbot interface (make sure that uvicorn server has started on the HPC).
 
 [Zaslonski_video_20260428_180534.webm](https://github.com/user-attachments/assets/f1a1b2a2-4ad5-4d21-a416-f5881379a9d8)
 
