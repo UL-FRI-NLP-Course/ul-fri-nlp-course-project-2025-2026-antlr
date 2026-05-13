@@ -9,6 +9,5 @@
 |Which of the following is a criterion for a doctoral student to be awarded the 'cum laude' (with honors) distinction upon completion?|The candidate is the lead author of at least three articles in Q1 journals or Core A conferences, or two articles in the top 5% or Core A* conferences.|
 |What is the purpose of 'Seminar 5' in the doctoral study process at FRI?|It serves as a public 'pre-defense' where the candidate presents results to the committee for a thorough critical evaluation before submission.|
 |For first-cycle (Bachelor's) students, who must be included in the Commission for evaluation and defense?|The mentor and at least two other university teachers.|
-|In the context of language rules for a Master's thesis at FRI, what is required if a student is granted permission to write the thesis in English?|The student must include an extended abstract in the Slovene language, typically comprising |
-|Which of the following is NOT listed as a category of 'Special Status' for students at the University of Ljubljana?|Student with an active full-time job in industry|
+|In the context of language rules for a Master's thesis at FRI, what is required if a student is granted permission to write the thesis in English?|The student must include an extended abstract in the Slovene language, typically comprising 3 to 5 pages.|
 |What are the rules regarding the citation of AI tools in academic work at the University of Ljubljana?|Tools should be cited using APA style, listing the model name, version, and the nature of the model's contribution.|

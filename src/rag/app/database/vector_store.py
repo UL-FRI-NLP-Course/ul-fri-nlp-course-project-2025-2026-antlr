@@ -17,7 +17,9 @@ class VectorStore:
         """Initialize the VectorStore with settings, multilingual bert client, and Timescale Vector client."""
         self.settings = get_settings()
         self.embedding_model = SentenceTransformer(
-            "intfloat/multilingual-e5-base",
+            "intfloat/multilingual-e5-base",  # 7/11 pravilno
+            # "google/embeddinggemma-300m",  # 8 / 11 pravilno
+            # "BAAI/bge-m3",  # 8 / 11 pravilnih (pozor: rabi 1024 dolge vektorje)
             device="cuda",  ## todo test gemma embedding 300m ali bge-m3
         )
         self.vector_settings = self.settings.vector_store

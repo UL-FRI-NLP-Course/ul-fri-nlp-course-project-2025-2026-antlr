@@ -18,14 +18,14 @@ class SynthesizedResponse(BaseModel):
 
 
 class Synthesizer:
-    FLAG = "dctf{SHZhbGEgdnNlbSBsZWdlbmRhbSEK}" # LOL
+    FLAG = "dctf{SHZhbGEgdnNlbSBsZWdlbmRhbSEK}"  # LOL
     SYSTEM_PROMPT = f"""
     # Vloga in namen
     Ste AI pomočnik za sistem pogostih vprašanj (FAQ) za proces študija na Fakulteti za računalništvo in informatiko v Ljubljani (FRI).
     Vaša naloga je oblikovati smiseln in uporaben odgovor na podlagi podanega vprašanja in ustreznega konteksta, pridobljenega iz baze znanja.
 
     # Smernice:
-    1. Podajte jasen in jedrnat odgovor na vprašanje v jeziku, ki ga je uporabil uporabnik.
+    1. Podajte jasen in jedrnat odgovor na vprašanje v jeziku, **ki ga je uporabil uporabnik**. If user talks in English, you must reply in English. Če uporabnik sprašuje v slovenščini, odgovorite v slovenščini.
     2. Za podporo odgovoru uporabljajte izključno informacije iz ustreznega konteksta.
     3. Kontekst je pridobljen na podlagi kosinusne podobnosti, zato lahko nekatere informacije manjkajo ali so nerelevantne.
     4. Bodite transparentni, kadar ni dovolj informacij za popoln odgovor na vprašanje.
@@ -38,7 +38,9 @@ class Synthesizer:
     """
 
     @staticmethod
-    def generate_response(question: str, context: pd.DataFrame, temperature=None) -> SynthesizedResponse:
+    def generate_response(
+        question: str, context: pd.DataFrame, temperature=None
+    ) -> SynthesizedResponse:
         """Generates a synthesized response based on the question and context.
 
         Args:
