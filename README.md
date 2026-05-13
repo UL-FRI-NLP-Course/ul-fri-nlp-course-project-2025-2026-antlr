@@ -59,7 +59,7 @@ Open a new **local* terminal on your machine and copy the tunnel command *from t
 ```bash
 ssh -L 8080:wnNodeNumber.arnes.si:8080 username@hpc-login.arnes.si  # Make sure to copy command from the log, not from here!
 ```
-If you are using Windows, you can use [PuTTY](https://www.putty.org/) or [MobaXterm](https://mobaxterm.mobatek.net/) to create the tunnel.
+If you are using Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or [MobaXterm](https://mobaxterm.mobatek.net/) to create the tunnel.
 
 After that command navigate to http://localhost:8080 to access the chatbot interface (make sure that uvicorn server has started on the HPC).
 
