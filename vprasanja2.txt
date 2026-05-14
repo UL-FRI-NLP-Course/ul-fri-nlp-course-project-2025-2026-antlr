@@ -1,0 +1,266 @@
+Testna vprašanja (2. sklop - Gašper S)
+1. Kako prijavim temo diplomskega dela na FRI? -> Uradne prijave tem diplomskih del potekajo vsako leto, **med 1. in 15. 4.**, **preko sistema STUDIS**. Študent mora biti pred prijavo z bodočim mentorjem že ustno usklajen glede sodelovanja, nato v sistemu ob prijavi navede mentorja in delovni naslov teme. Mentor v sistemu potrdi prijavo in takrat prične veljati desetmesečna veljavnost teme. Datum oddaje elektronske verzije je zaveden v sistemu STUDIS.
+2. Kakšna je razlika med vpisnimi pogoji za univerzitetni program računalništva in informatike in IŠRM? -> todo
+3. Kaj je robo liga FRI?
+4. Kako pridobim ključek za odklepanje garaže?
+5. Kateri profesorji in asistenti delajo v laboratoriju za računalniški vid?
+6. Kakšna je razlika med diplomskim in magistrskim delom na FRI?
+7. Kaj moram storiti, da lahko pridobim študentsko izkaznico v obliki aplikacije za pametne telefone?
+8. Kdaj in kako lahko zamenjam izbirni predmet, če sem že vpisal izbirne predmete?
+9. Kateri profesor uči predmet grafično oblikovanje in varnost programov?
+10. Zanimajo me teme s področja umetne inteligence. Kateri profesorji bi lahko bili primerni za mentorstvo magistrske naloge iz te teme?
+
+odgovori: (T: 0.01)
+1. Kako prijavim temo diplomskega dela na FRI?
+z uporabo konteksta:
+Za prijavo teme diplomskega dela na Fakulteti za računalništvo in informatiko v Ljubljani (FRI) sledite naslednjim korakom:
+    Uskladite se z mentorjem: Pred prijavo se morate ustno uskladiti z bodočim mentorjem glede sodelovanja.
+    Prijava preko sistema STUDIS: Uradne prijave tem diplomskih del potekajo vsako leto med 1. in 15. aprilom preko sistema STUDIS.
+    Vnos podatkov: Pri prijavi v sistemu STUDIS navedite mentorja in delovni naslov teme.
+    Potrditev mentorja: Mentor mora prijavo potrditi v sistemu. S tem se začne veljati desetmesečna veljavnost teme.
+    Oddaja elektronske verzije: Datum oddaje elektronske verzije je zaveden v sistemu STUDIS.
+
+Če imate somentorja z druge fakultete, ki ga v sistemu STUDIS ne morete izbrati, sledite naslednjim korakom:
+    Prijavo somentorja uredite istočasno s prijavo teme.
+    Mentor mora z izbiro somentorja soglašati.
+    Če somentor nima habilitacijskega naziva na FRI, preko sistema STUDIS pod tip prošnje Splošna prošnja posredujte naslednje podatke:
+        Priimek, ime
+        Ime z nazivom (v kolikor ima somentor habilitacijski naziv)
+        Zavod zaposlitve
+        E-poštni naslov
+        Najvišji naziv, ki ga je želeni somentor pridobil ob zaključku študija
+Če potrebujete dodatno pomoč, se lahko obrnete na študentski referat FRI.
+
+brez uporabe konteksta:
+Za prijavo teme diplomskega dela na FRI sledite naslednjim korakom:
+    Preverite pogoje za prijavo teme: Poskrbite, da izpolnjujete vse pogoje za prijavo teme, kot so opravljene obveznosti in odobritev mentorja.
+    Izpolnite obrazec za prijavo teme: Obrazec najdete na spletni strani FRI ali v sistemu e-Študent.
+    Priložite potrebne dokumente: Vključite povzetek teme, predlaganega mentorja in morebitna druga zahtevana dokumenta.
+    Oddajte obrazec: Obrazec oddajte preko sistema e-Študent ali ga osebno oddajte na oddelku za študentske zadeve.
+    Počakajte na odobritev: Po oddaji bo vaša prijava pregledana s strani oddelka za študentske zadeve in vašega mentorja.
+    Prejmite potrditev: Ko bo vaša prijava odobrena, boste prejeli potrditev preko e-Študenta ali preko e-pošte.
+Če potrebujete pomoč pri iskanju obrazca ali pri oddaji, mi sporočite.
+
+rezultat: kontekst: 1, brez: 0; llm je lahko iz konteksta podal podrobnejše informacije (npr. ve, da je uporabljen sistem STUDIS), brez konteksta je lahko podal samo bolj splošen odgovor.
+
+2. Kakšna je razlika med vpisnimi pogoji za univerzitetni program računalništva in informatike in IŠRM?
+z uporabo konteksta:
+Razlika med vpisnimi pogoji za univerzitetni program računalništva in informatike in IŠRM je naslednja:
+
+    Vpisni pogoji za univerzitetni program računalništva in informatike:
+        Kandidat mora opraviti splošno maturo.
+        Ali opraviti poklicno maturo v kateremkoli srednješolskem programu in izpit splošne mature iz predmeta matematika; če je kandidat ta predmet že opravil pri poklicni maturi, pa izpit iz kateregakoli predmeta splošne mature; izbrani predmet ne sme biti predmet, ki ga je kandidat že opravil pri poklicni maturi.
+        Ali končati katerikoli štiriletni srednješolski program pred l. 6. 1995.
+
+    Vpisni pogoji za IŠRM (Interdisciplinarni študijski program Računalništvo in matematika):
+        Kandidat mora opraviti splošno maturo.
+        Ali opraviti poklicno maturo v kateremkoli srednješolskem programu in izpit splošne mature iz predmeta matematika; če je kandidat ta predmet že opravil pri poklicni maturi, pa izpit iz kateregakoli predmeta splošne mature; izbrani predmet ne sme biti predmet, ki ga je kandidat že opravil pri poklicni maturi.
+        Ali končati katerikoli štiriletni srednješolski program pred l. 6. 1995.
+
+Povzetek: Vpisni pogoji za oba programa so enaki, saj oba zahtevata opravljeno splošno maturo ali poklicno maturo z izpolnitvijo dodatnih pogojev.
+brez uporabe konteksta:
+Vpisni pogoji za univerzitetni program računalništva in informatike (UNI) in univerzitetni program informatika in mediji (IŠRM) se razlikujejo glede na zahtevane točke in izbirne predmete.
+
+    UNI (računalništvo in informatika):
+        Zahtevane točke: 100 točk (ali manj, odvisno od števila prijavljenih kandidatov).
+        Izbirni predmeti: Matematika, Fizika, Računalništvo.
+        Program se osredotoča na računalniške znanosti, algoritme, programsko opremo in strojno opremo.
+
+    IŠRM (informatika in mediji):
+        Zahtevane točke: 90 točk (ali manj, odvisno od števila prijavljenih kandidatov).
+        Izbirni predmeti: Matematika, Fizika, Računalništvo ali Biologija.
+        Program se osredotoča na uporabno informatiko, medijske tehnologije in interaktivne sisteme.
+
+Če želite več informacij o specifičnih predmetih ali vsebini programa, mi sporočite.
+
+rezultat: kontekst: 1, brez: 0; brez konteksta: primerjava napačnega programa (informatika in mediji)
+
+3. Kaj je robo liga FRI?
+z uporabo konteksta:
+Robo liga FRI je študentsko tekmovanje, ki poteka na Fakulteti za računalništvo in informatiko v Ljubljani.
+Tekmovanje vključuje izdelavo in programiranje robotov, ki morajo opraviti določene naloge.
+Tekmovanje je namenjeno spodbujanju praktičnega znanja in inovativnosti med študenti. Več informacij lahko najdete na Robo liga FRI (link je in dela).
+
+brez uporabe konteksta:
+Robotika liga FRI je študentsko tekmovanje, ki ga organizira Fakulteta za računalništvo in informatiko v Ljubljani.
+Tekmovanje je namenjeno spodbujanju inženirskega razmišljanja, timskega dela in praktične uporabe znanja računalništva in robotike.
+Študenti se lahko pridružijo kot posamezniki ali kot člani ekip in sodelujejo v različnih robotičnih izzivih. Tekmovanje je odlična
+priložnost za pridobivanje praktičnih izkušenj in mreženje z drugimi študenti in strokovnjaki iz industrije.
+
+rezultat: kontekst: 1, brez: 1
+
+4. Kako pridobim ključek za odklepanje garaže?
+z uporabo konteksta:
+Za pridobitev ključka za odklepanje Garaže se morate priključiti enemu izmed programov Garaže.
+Ko to storite, vaše ime posredujemo v FRIjevo Kadrovsko službo (dekanat FRI v tretjem nadstropju),
+kjer lahko svoj novi ključek za Garažo tudi prevzamete. Ko imate svoj ključek, lahko delate v Garaži
+poljubno dolgo, razen v primeru, ko je prostor rezerviran za eno izmed aktivnosti, recimo delavnico.
+V tem primeru lahko delate v manjši sobi, da ne motite delavnice.
+
+brez uporabe konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+rezultat: kontekst 1, brez: 0
+
+5. Kateri profesorji in asistenti delajo v laboratoriju za računalniški vid?
+z uporabo konteksta:
+V Laboratoriju za računalniški vid na Fakulteti za računalništvo in informatiko Univerze v Ljubljani (FRI) sodelujejo naslednji profesorji in asistenti:
+
+    Prof. dr. Marko Robnik
+    Asist. dr. Matej Kristan
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    Asist. dr. Mateja Špehar
+    **Asist. dr. Mateja Š
+
+
+brez uporabe konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+rezultat: kontekst: 0.5, brez: 0
+
+6. Kakšna je razlika med diplomskim in magistrskim delom na FRI?
+z uporabo konteksta:
+Razlika med diplomskim in magistrskim delom na Fakulteti za računalništvo in informatiko v Ljubljani (FRI) je predvsem v stopnji študija,
+obsegu dela in kreditnih točkah, ki so povezane z vsakim delom.
+
+    Diplomsko delo je del dodiplomskega študija (prva stopnja) in je ovrednoteno s 6 KT na univerzitetnem in visokošolskem strokovnem študijskem programu Računalništvo in informatika ter s 4 KT na interdisciplinarnem študijskem programu Računalništvo in matematika.
+    Magistrsko delo je del podiplomskega študija (druga stopnja) in je ovrednoteno s 24 KT. To pomeni, da mora študent za magistrsko delo nameniti približno 720 ur dela.
+
+Poleg tega:
+
+    Diplomsko delo je običajno krajše in bolj osredotočeno na specifično temo, ki je povezana s študijskim programom.
+    Magistrsko delo je obsežnejše in zahteva globlje raziskovanje, pogosto vključuje originalne prispevke ali reševanje kompleksnih problemov.
+
+Oba dela sta pomembna mejnika v študijskem procesu in zahtevata skrbno načrtovanje, izdelavo in zagovor.
+
+brez uporabe konteksta:
+Na FRI je razlika med diplomskim in magistrskim delom predvsem v obsegu, globini in zahtevnosti projekta.
+
+    Diplomirano delo je običajno krajše in se osredotoča na reševanje specifičnega problema ali izvedbo manjšega projekta, ki temelji na znanju, pridobljenem med dodiplomskim študijem.
+    Magistrsko delo je obsežnejše in zahteva poglobljeno raziskovanje, pogosto vključuje originalne prispevke ali reševanje kompleksnejših problemov.
+
+Oba projekta sta ključna za dokončanje študija, vendar magistrsko delo običajno zahteva več časa, raziskav in samostojnega dela.
+
+rezultat: kontekst: 1, brez: 1
+
+7. Kaj moram storiti, da lahko pridobim študentsko izkaznico v obliki aplikacije za pametne telefone?
+z uporabo konteksta:
+Za pridobitev študentske izkaznice v obliki aplikacije za pametne telefone sledite naslednjim korakom:
+
+    Počakajte na objavo aplikacije: Ministrstvo za visoko šolstvo, znanost in inovacije (MVZI) pripravlja uvedbo nacionalne digitalne študentske izkaznice v obliki mobilne aplikacije. Aplikacija bo na voljo v trgovinah Google Play in Apple.
+    Preverite obvestilo o dostopnosti: Obvestilo o dostopnosti aplikacije bo objavljeno na uradni spletni strani.
+    Prenesite aplikacijo: Ko bo aplikacija na voljo, jo lahko prenesete iz uradnih trgovin Google Play in Apple.
+    Avtentikacija z SI-PASS: Po namestitvi aplikacije se boste morali avtenticirati z uporabo SI-PASS, kar je sistem za elektronsko identifikacijo in avtentikacijo.
+    Dostop do podatkov: Po uspešni avtentikaciji bo aplikacija prikazala podatke vaše študentske izkaznice, ki bodo pridobljeni iz eVŠ informacijskega sistema.
+
+Za najnovejše informacije redno preverjajte uradne spletne strani Fakultete za računalništvo in informatiko v Ljubljani (FRI) in Ministrstva za visoko šolstvo, znanost in inovacije (MVZI).
+
+brez uporabe konteksta:
+Za pridobitev študentske izkaznice v obliki aplikacije za pametne telefone morate slediti naslednjim korakom:
+
+    Preverite, ali je vaša študentska izkaznica že digitalizirana: Nekatere študentske izkaznice so že na voljo v digitalni obliki preko sistema, ki ga uporablja vaša univerza. Preverite pri svojem študentskem referatu ali na spletni strani univerze,
+     ali je vaša študentska izkaznica na voljo v digitalni obliki.
+    Prenesite aplikacijo: Če je vaša študentska izkaznica na voljo v digitalni obliki, prenesite uradno aplikacijo univerze ali študentskega servisa s trgovine Google Play ali App Store.
+    Registrirajte se v aplikacijo: Po namestitvi aplikacije se registrirajte z uporabo svojega študentskega e-poštnega naslova in gesla ali z uporabo študentske številke in osebnih podatkov.
+    Povežite svojo študentsko izkaznico: V aplikaciji poiščite možnost za povezavo ali dodajanje študentske izkaznice. Sledite navodilom za skeniranje QR kode ali vnos študentske številke in osebnih podatkov.
+    Varno shranite svojo digitalno izkaznico: Po uspešni povezavi shranite svojo digitalno študentsko izkaznico v aplikacijo. Nekatere aplikacije omogočajo tudi sinhronizacijo z digitalnimi denarnicami ali mobilnimi plačilnimi sistemi.
+    Preverite veljavnost: Redno preverjajte veljavnost svoje digitalne študentske izkaznice, da zagotovite, da je še vedno aktivna in veljavna.
+
+Če imate težave ali potrebujete dodatno pomoč, se obrnite na študentski referat ali tehnično podporo univerze.
+
+rezultat: kontekst: 1, brez: 1
+
+8. Kdaj in kako lahko zamenjam izbirni predmet, če sem že vpisal izbirne predmete?
+z uporabo konteksta:
+V skladu s 4. členom Študijskega reda UL FRI (link je) lahko študent izbirne predmete zamenja najkasneje
+do vključno petka v 3. tednu izvajanja predmeta, ko predmet prvič posluša ali v izrednih primerih (npr. neizvajanje predmeta).
+Prošnja za menjavo se odda preko sistema STUDIS (Tip prošnje: Prošnja za zamenjavo izbirnega predmeta).
+
+brez uporabe konteksta:
+Če ste že vpisali izbirne predmete in želite zamenjati enega ali več izbirnih predmetov,
+lahko to storite v skladu s pravili, ki jih določa Fakulteta za računalništvo in informatiko Univerze v Ljubljani.
+Kdaj lahko zamenjate izbirne predmete:
+
+    Med študijskim letom: Običajno lahko zamenjate izbirne predmete do konca prvega semestra (običajno do konca oktobra), odvisno od rokov, ki jih določi fakulteta.
+    Po prvem semestru: Po tem roku je zamenjava izbirnih predmetov običajno možna le v izjemnih primerih (npr. zdravstveni razlogi,
+    spremembe študijskega programa) in zahteva odobritev s strani fakultete.
+
+Kako zamenjati izbirne predmete:
+
+    Preverite razpoložljivost predmetov: Poskrbite, da je predmet, ki ga želite zamenjati,
+    na voljo in da izpolnjuje pogoje za izbirne predmete (npr. število kreditnih točk, predhodni pogoji).
+    Izpolnite obrazec za spremembo študijskega programa: Običajno morate izpolniti in
+    oddati obrazec za spremembo študijskega programa, ki je na voljo na spletni strani fakultete ali v referatu.
+    Predložite obrazec: Obrazec oddajte v referatu fakultete.
+    Čakajte na odobritev: Fakulteta bo pregledala vašo prošnjo in vas obvestila o odločitvi.
+
+Pomembne opombe:
+
+    Zamenjava izbirnih predmetov lahko vpliva na vaš študijski načrt in napredovanje.
+    Če zamenjate predmet, ki je že vpisan v vaš študijski načrt, boste morda morali prilagoditi svoj načrt.
+
+Za natančne informacije vedno preverite najnovejše smernice na spletni strani fakultete ali se obrnite na referat.
+
+rezultat: kontekst: 1, brez: 0.5; odgovor brez konteksta je bolj splošen, s kontekstom pa dovolj specifičen za fri
+
+9. Kateri profesor uči predmet grafično oblikovanje in varnost programov?
+z uporabo konteksta:
+Na podlagi podanega konteksta ni neposrednega odgovora na vprašanje, kdo uči predmet grafično oblikovanje in varnost programov. Vendar pa lahko iz konteksta razberemo, da sta oba predmeta del študijskega programa na Fakulteti za računalništvo in informatiko v Ljubljani (FRI).
+
+    Grafično oblikovanje je del predmeta Vizualno komuniciranje, ki ga poučuje Matevž Pesek.
+    Varnost programov je del predmeta Varnost sistemov, ki ga prav tako poučuje Matevž Pesek.
+
+Torej, oba predmeta poučuje Matevž Pesek.
+brez uporabe konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+rezultat: kontekst: 1, brez: 0
+
+10. Zanimajo me teme s področja umetne inteligence. Kateri profesorji bi lahko bili primerni za mentorstvo magistrske naloge iz te teme?
+z uporabo konteksta:
+Na podlagi podanega konteksta so naslednji profesorji na Fakulteti za računalništvo in informatiko UL, ki bi lahko bili primerni za mentorstvo magistrske naloge s področja umetne inteligence:
+
+    prof. dr. Danijel Skočaj (umetna inteligenca, računalniški vid, globoko učenje)
+    prof. dr. Peter Peer (umetna inteligenca, računalniški vid, slikovna biometrija)
+    prof. dr. Erik Štrumbelj (umetna inteligenca, pogovorna orodja, kognicija)
+    izr. prof. dr. Slavko Žitnik (umetna inteligenca, jezikovni modeli, upravljanje znanja, agentni sistemi, semantični splet)
+    doc. dr. Petar Kochovski (zaupanje, zasebnost in razložljivost umetne inteligence, tehnologija razpršenih evidenc)
+
+Ti profesorji so navedeni v kontekstu, ki se nanaša na raziskovalna področja in mentorstvo na Fakulteti za računalništvo in informatiko UL.
+brez uporabe konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+rezultat: kontekst: 1, brez: 0
+
+končni rezultat: kontekst: 9.5, brez: 3.5
+povzetek: odgovori z uporabo konteksta so bolj točni od tistih, kjer kontekst ni uporabljen.
+
