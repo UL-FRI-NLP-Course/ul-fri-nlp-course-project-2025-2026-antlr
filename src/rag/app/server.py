@@ -26,6 +26,7 @@ class ChatCompletionRequest(BaseModel):
     model: str
     messages: List[Message]
     temperature: float
+    use_context: bool
 
 
 # -----------------------------
@@ -43,11 +44,15 @@ def chat_completion(req: ChatCompletionRequest):
 
     # synthesis
     temperature = float(req.temperature)
+    use_context = True # default is True
+    if(req.use_context is not None):
+        use_context = bool(req.use_context)
     print("[debug] temperature is %.2f"%temperature)
     response = Synthesizer.generate_response(
         question=question,
         context=results,
-        temperature=temperature
+        temperature=temperature,
+        use_context=use_context
     )
 
     answer = response[0]["generated_text"][-1]["content"]
