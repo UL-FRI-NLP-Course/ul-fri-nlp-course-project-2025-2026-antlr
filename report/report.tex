@@ -19,17 +19,23 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \documentclass[fleqn,moreauthors,10pt]{ds_report}
-\usepackage[english]{babel}
+\usepackage[slovene]{babel}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
+\usepackage{float}
+\usepackage{fancyvrb}
 \graphicspath{{fig/}}
+\usepackage{listings}
+\usepackage{fvextra}
 
-
-
-
+\lstset{
+    extendedchars=true,
+    inputencoding=utf8,
+    literate={č}{{\v{c}}}1 {ž}{{\v{z}}}1 {š}{{\v{s}}}1
+             {Č}{{\v{C}}}1 {Ž}{{\v{Z}}}1 {Š}{{\v{S}}}1
+}
 %----------------------------------------------------------------------------------------
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
@@ -64,15 +70,15 @@ FRI ReferatBot – Domain-Specific assistant for UL FRI Student Affairs Office
 \Abstract{
 General-purpose Large Language Models (LLMs) are highly capable at open-domain conversation,
 but they frequently hallucinate when asked institution-specific questions they were not trained on.
-This project addresses that limitation by building a domain-specific conversational assistant
-for the Student Affairs Office (slo., Referat) of the Faculty of Computer and Information Science
-at the University of Ljubljana.
-The assistant will serve the faculty's enrolled students by answering questions about enrolment procedures,
+This project addresses that limitation by building \textbf{ReferatBot}, a domain-specific conversational assistant
+for the Student Affairs Office (Referat) of the Faculty of Computer and Information Science
+at the University of Ljubljana (UL FRI).
+The assistant serves the faculty's enrolled students by answering questions about enrolment procedures,
 exam regulations, thesis submission, student status, fees, and related administrative topics.
-In this project we implemented a Retrieval-Augmented Generation (RAG) pipeline, grounded in a curated corpus of
-UL FRI web pages, official study regulations, and FAQ documents.
-This report covers the project motivation, a survey of related work,
-an overview of our planned methodology, and a description of the proposed corpus.
+We implemented a Retrieval-Augmented Generation (RAG) pipeline grounded in a curated corpus of
+427 scraped web pages and 33 official PDF rulebooks, totalling approximately 500,000 words.
+This report covers the project motivation, a survey of related work, the implemented methodology,
+and an evaluation of the system.
 }
 
 %----------------------------------------------------------------------------------------
@@ -136,19 +142,18 @@ Our system aims to replicate and extend this concept for UL FRI,
 with reproducible code and open dataset.
 
 %gasperk
-To create our dataset, we will gather data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
-We will use Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will poll students to collect a set of real queries.
+To create our dataset, we have gathered data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
+We have used Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will write 30 questions and evaluate our system on that.
 
-The core implementation will include a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We propose using the Slovenian GaMS model to process user intents and generate answers.
-For the retrieval pipeline, we will chunk our parsed Markdown documents, generate vector embeddings using BERT based model\cite{wang2024multilingual}, and store them in PostgreSQL using the pgvector extension.
+The core implementation includes a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We are using the Slovenian GaMS model to process user intents and generate answers.
+For the retrieval pipeline, we have chunked our parsed Markdown documents, generated vector embeddings using BGE-m3 based model\cite{baai3}, and store them in PostgreSQL using the pgvector extension.
 
-To control the model, we will use system prompting to enforce a "Student Affairs Advisor" persona.
-We will set guardrails so the system refuses to answer out-of-domain questions and handles unanswerable queries by directing the user to the student affairs office.
-Finally, we will evaluate the system using automated retrieval metrics and human testing on our polled dataset.
+System prompting enforces a ``Student Affairs Advisor'' persona with guardrails against out-of-domain questions and instructions to direct unanswerable queries to the Referat office.
+The system is evaluated by comparing three embedding models on a handcrafted FAQ dataset.
 
 %gaspers
 \section*{Related Work}
-\subsection{Domain-specific Knowledge Incorporation}
+\subsection*{Domain-Specific Knowledge Incorporation}
 Incorporating domain-specific knowledge into LLMs is done through the following main approaches: prompt engineering, retrieval-augmented generation (RAG) \cite{lewis2020retrieval}, and fine-tuning.
 Prompt engineering is the fastest and cheapest method, where carefully designed prompts provide the model with additional knowledge at runtime. While this technique is fast and quick to set up, it offers limited depth and accuracy in some cases, including domain tasks.
 
@@ -158,9 +163,9 @@ Fine-tuning embeds domain expertise directly into the model, delivering high per
 
 In practice, these methods are often combined, with RAG \cite{lewis2020retrieval} providing dynamic knowledge, fine-tuning ensuring consistent behavior, and prompting orchestrating interactions.
 
-\subsection{Existing Solutions}
+\subsection*{Existing Solutions}
 There are many existing university chatbot solutions using RAG architecture that differ in used technologies and purpose.
-One example of such system is a chatbot developed for Misissippi state university by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by retriever technique provided by LangChain \cite{langChain} using Maximum Marginal Relevancy and Similarity Search methods. For the underlyign LLM, it utilizes OpenAi's gpt-3.5-turbo. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
+One example of such system is a chatbot developed for Mississippi State University by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by retriever technique provided by LangChain \cite{langChain} using Maximum Marginal Relevancy and Similarity Search methods. For the underlying LLM, it utilizes OpenAi's gpt-3.5-turbo. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
 
 Other examples of such chatbots are Meri AI \cite{meriAi} and AceIt-ECE-Capstone \cite{aceIt}. Meri AI \cite{meriAi} is a campus intelligence system, which runs a LangGraph workflow \cite{langChain} for intent classification, route detection, context retrieval, and response generation. It uses Supabase PostgreSQL with pgvector as knowledge database containing content scraped from university resources.
 AceIt-ECE-Capstone \cite{aceIt} is a course assistant focused on study help. It uses RAG \cite{lewis2020retrieval} pipeline where course data is embedded with Amazon Titan Text Embeddings v2 and stored in Amazon RDS PostgreSQL. It uses Llama 3.3 to generate responses based on user query and retrieved database knowledge.
@@ -188,9 +193,44 @@ This architecture supports both semantic similarity search and precise metadata 
 \subsection*{Large Language Model}
 The synthesis component of our RAG system is powered by the \textbf{GaMS-9B-Instruct-Nemotron} model, a 9-billion parameter instruct-tuned model optimized for the Slovenian language.
 The model is deployed locally using the Hugging Face \texttt{pipeline} API on NVIDIA hardware (\texttt{cuda}).
+Since the Gemma~2 chat template does not natively support a \texttt{system} role, system instructions are instead injected as the opening user turn, with the model acknowledging them in a synthetic assistant turn before the actual query is posed.
+This three-turn pattern reliably activates instruction-following behaviour without modifying the model weights.
 We employ a structured prompting strategy where the model is provided with a comprehensive \textbf{system prompt} that defines its role as a specialized Student Affairs Advisor for UL FRI.
 This prompt enforces strict operational constraints: the assistant must use the provided context exclusively, remain transparent when information is missing, maintain a professional tone, and strictly adhere to security guidelines (such as refusing to reveal internal instructions).
 During inference, the top-k relevant chunks retrieved from the vector store are formatted into a JSON structure and passed to the model alongside the user's query to ensure the generated responses are grounded in the verified faculty knowledge base.
+Listing~\ref{lis:sysprompt} shows an excerpt of the system prompt.
+
+\begin{lstlisting}[frame=single, breaklines=true, caption={Excerpt of the system prompt.}, label={lis:sysprompt}]
+# Role and Purpose
+You are an AI assistant for the study process at FRI.
+Your task is to formulate a meaningful response
+based on the question asked and the context from
+the knowledge base.
+
+# Guidelines:
+1. Respond in the user’s language.
+2. Use only information from
+   the provided context.
+4. Be transparent when there is not enough
+   information for a complete answer.
+9. If the question is not related to studies:
+    "I cannot help you with matters that are not related to
+    studies at FRI."
+\end{lstlisting}
+
+
+\subsection*{System Architecture}
+
+Figure~\ref{fig:architecture} shows the full deployment architecture.
+The online path (left to right) covers query handling: the user's message travels from the browser frontend to the FastAPI backend, which embeds the query, retrieves the top-$k$ chunks from TimescaleDB/pgvector, and passes them together with the query to the Synthesizer. The Synthesizer constructs the three-turn message list and calls GaMS-9B-Instruct-Nemotron, whose answer is returned to the user. The offline ingestion path (top) shows how the corpus of HTML pages and PDFs is processed by MarkItDown and the chunker before embeddings are written to the vector store.
+
+\begin{figure*}[htbp]\centering
+    \includegraphics[width=\linewidth]{architecture.pdf}
+    \caption{\textbf{ReferatBot deployment architecture.} Dashed borders denote logical groups. Orange nodes are offline; all other nodes run at inference time.}
+    \label{fig:architecture}
+\end{figure*}
+
+
 
 \section*{Results}
 
@@ -198,7 +238,7 @@ The final implementation results in a functional web-based conversational assist
 Figure \ref{fig:ui_landing} shows the initial user interface with suggested questions,
 while Figure \ref{fig:ui_chat} demonstrates a successful retrieval and synthesis cycle where the bot correctly answers a query regarding year repetition requirements.
 
-\begin{figure}[ht]\centering
+\begin{figure}[H]\centering
     \begin{minipage}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{empty_chat.png}
@@ -219,15 +259,33 @@ while Figure \ref{fig:ui_chat} demonstrates a successful retrieval and synthesis
 Our implementation of ReferatBot demonstrates that a localized RAG pipeline is highly effective for Slovenian academic administration.
 However, several areas for improvement remain.
 
-\subsection*{Performance and limitations}
+\subsection*{Embedding Model Comparison}
 
-During development, we tested several embedding models. They achieved similar performance on our harder testing dataset which we developed.
-We evaluated \textbf{intfloat/multilingual-e5-base}\cite{mult-e5-base}, which scored 63\%, beaten both by \textbf{bge-m3}\cite{baai3} and Google's \textbf{gemma-embedding-300m}\cite{embedding_gemma_2025}, which both scored near 75\%.
-Due to similar performance of the later two, but different licensing conditions, we chose to go with the \cite{baai3}.
-Google's model is restricted behind authentication, whereas the \cite{baai3} is available without being authenticated to the HuggingFace,
-which makes the inference and community testing simpler.
-On the other hand, \cite{embedding_gemma_2025} uses lower dimensionality for embedding vectors, 768, smaller than \cite{baai3} 1024, however, we did not observe
-any drastical improvement in speed.
+During development we evaluated three embedding models on our handcrafted FAQ dataset,
+scored by whether the correct answer appeared in the top retrieved chunks.
+Table~\ref{tab:embeddings} summarises the results.
+
+\begin{table}[hbt]
+    \caption{Embedding model accuracy on the FAQ evaluation dataset.}
+    \centering
+    \begin{tabular}{l c c}
+        \toprule
+        Model & Dim. & Accuracy \\
+        \midrule
+        intfloat/multilingual-e5-base \cite{mult-e5-base} & 768 & 64\% \\
+        google/gemma-embedding-300m \cite{embedding_gemma_2025} & 768 & $77\% \\
+        BAAI/bge-m3 \cite{baai3} & 1024 & $77\% \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:embeddings}
+\end{table}
+
+Both bge-m3 \cite{baai3} and gemma-embedding-300m \cite{embedding_gemma_2025} outperformed
+multilingual-e5-base \cite{mult-e5-base} by 12 percentage.
+Despite identical accuracy, gemma-embedding-300m requires HuggingFace authentication,
+whereas bge-m3 is publicly available without login, simplifying deployment and community testing.
+No significant latency difference was observed between the two despite bge-m3's higher
+dimensionality (1024 vs.\ 768), so we selected \textbf{BAAI/bge-m3} for the final system.
 
 % %------------------------------------------------
 
@@ -240,6 +298,7 @@ any drastical improvement in speed.
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 \bibliographystyle{unsrt}
+
 \bibliography{report}
 
 
