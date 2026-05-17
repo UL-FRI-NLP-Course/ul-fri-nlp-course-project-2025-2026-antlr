@@ -253,12 +253,6 @@ while Figure \ref{fig:ui_chat} demonstrates a successful retrieval and synthesis
     \end{minipage}
 \end{figure}
 
-% %------------------------------------------------
-
-\section*{Discussion}
-Our implementation of ReferatBot demonstrates that a localized RAG pipeline is highly effective for Slovenian academic administration.
-However, several areas for improvement remain.
-
 \subsection*{Embedding Model Comparison}
 
 During development we evaluated three embedding models on our handcrafted FAQ dataset,
@@ -286,6 +280,12 @@ Despite identical accuracy, gemma-embedding-300m requires HuggingFace authentica
 whereas bge-m3 is publicly available without login, simplifying deployment and community testing.
 No significant latency difference was observed between the two despite bge-m3's higher
 dimensionality (1024 vs.\ 768), so we selected \textbf{BAAI/bge-m3} for the final system.
+% %------------------------------------------------
+
+\section*{Discussion}
+Our implementation of ReferatBot demonstrates that a localized RAG pipeline is highly effective for Slovenian academic administration.
+However, several areas for improvement remain.
+
 
 % %------------------------------------------------
 
