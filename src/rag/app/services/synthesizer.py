@@ -1,5 +1,4 @@
 from typing import List
-
 import pandas as pd
 from pydantic import BaseModel, Field
 
@@ -54,31 +53,78 @@ class Synthesizer:
     """
 
     @staticmethod
+    def rewrite_query(history_str: str, latest_question: str) -> str:
+        rewrite_prompt = f"""Tvoja edina naloga je, da preoblikuješ zadnje vprašanje tako, da bo samostojno in bo vsebovalo manjkajoči kontekst iz zgodovine. Ne odgovarjaj na vprašanje, samo preoblikuj ga!
+
+        Primer 1:
+        Zgodovina:
+        USER: Kdaj so izpiti?
+        Zadnje vprašanje: Kje pa se prijavim?
+        Samostojno vprašanje: Kje se prijavim na izpite?
+
+        Primer 2:
+        Zgodovina:
+        USER: Ali lahko uveljavljam absolventa?
+        ASSISTANT: Da, lahko, če izpolnjuješ pogoje.
+        Zadnje vprašanje: Kaj pa če še nisem naredil magistrskega dela?
+        Samostojno vprašanje: Ali lahko uveljavljam absolventa, če še nisem naredil magistrskega dela?
+
+        Primer 3:
+        Zgodovina:
+        USER: Kdo je dekan?
+        ASSISTANT: Dekan je prof. dr. Mojca Ciglarič.
+        Zadnje vprašanje: Kje je študentska menza?
+        Samostojno vprašanje: Kje je študentska menza?
+
+        Zdaj pa preoblikuj tole:
+        Zgodovina:
+        {history_str}
+        Zadnje vprašanje: {latest_question}
+        Samostojno vprašanje:"""
+        
+        messages = [{"role": "user", "content": rewrite_prompt}]
+        try:
+            response = llm.get_response(messages=messages, temperature=0.1)
+            rewritten_text = response[0]["generated_text"][-1]["content"].strip()
+            
+            # Clean up potential LLM yapping
+            if "reoblikovano vprašanje" in rewritten_text.lower() or ":" in rewritten_text:
+                rewritten_text = rewritten_text.split(":")[-1].strip()
+                
+            return rewritten_text if rewritten_text else latest_question
+        except Exception as e:
+            print(f"[warning] Napaka pri preoblikovanju vprašanja: {e}")
+            return latest_question
+
+    @staticmethod
     def generate_response(
-        question: str, context: pd.DataFrame, temperature=None, use_context=True
+        question: str, context: pd.DataFrame, history_str: str = "", temperature=None, use_context=True
     ) -> SynthesizedResponse:
-        """Generates a synthesized response based on the question and context.
-
-        Args:
-            question: The user's question.
-            context: The relevant context retrieved from the knowledge base.
-
-        Returns:
-            A SynthesizedResponse containing thought process and answer.
-        """
         if question == Synthesizer.FLAG:
             print("Bravo za najdeni pirh!")
 
-        question_content=f"Uporabnikovo vprašanje je sledeče:\n<vprašanje>\n{question}\n</vprašanje>."
+        question_content = f"Uporabnikovo vprašanje je sledeče:\n<vprašanje>\n{question}\n</vprašanje>."
+        
+        # Inject memory context if history exists
+        if history_str:
+            question_content = f"Pretekli kontekst pogovora:\n<zgodovina>\n{history_str}\n</zgodovina>\n\n" + question_content
+
         system_prompt = Synthesizer.SYSTEM_PROMPT_NO_CONTEXT
-        if(use_context):
+        if use_context:
             system_prompt = Synthesizer.SYSTEM_PROMPT
             context_str = Synthesizer.dataframe_to_json(
                 context, columns_to_keep=["content"]
             )
-            question_content=f"Uporabnikovo vprašanje je sledeče:\n<vprašanje>\n{question}\n</vprašanje>. Podatki konteksta iz baze so:\n<podatki>\n{context_str}\n</podatki>"
+            if history_str:
+                question_content = (
+                    f"Pretekli kontekst pogovora:\n<zgodovina>\n{history_str}\n</zgodovina>\n\n"
+                    f"Uporabnikovo vprašanje je sledeče:\n<vprašanje>\n{question}\n</vprašanje>.\n"
+                    f"Podatki konteksta iz baze so:\n<podatki>\n{context_str}\n</podatki>"
+                )
+            else:
+                question_content = f"Uporabnikovo vprašanje je sledeče:\n<vprašanje>\n{question}\n</vprašanje>. Podatki konteksta iz baze so:\n<podatki>\n{context_str}\n</podatki>"
 
-        print("[debug] use_context: [%-3s], prompt: %s"%("yes" if(use_context) else "no", system_prompt))
+        print("[debug] use_context: [%-3s], prompt: %s" % ("yes" if use_context else "no", system_prompt))
 
         messages = [
             {
@@ -93,24 +139,7 @@ class Synthesizer:
                 "role": "user",
                 "content": question_content,
             },
-            # {"role": "assistant", "content": ""},
-            # {"role": "user", "content": f"# User question:\n{question}"},
         ]
-        # messages = [
-        #     {"role": "system", "content": Synthesizer.SYSTEM_PROMPT},
-        #     {"role": "user", "content": f"# User question:\n{question}"},
-        #     {
-        #         "role": "assistant",
-        #         "content": f"# Retrieved information:\n{context_str}",
-        #     },
-        # ]
-
-        # TODO: should return 'completion'
-        # llm = LLMFactory("llama")
-        # return llm.create_completion(
-        #     response_model=SynthesizedResponse,
-        #     messages=messages,
-        # )
         return llm.get_response(messages=messages, temperature=temperature)
 
     @staticmethod
@@ -118,16 +147,6 @@ class Synthesizer:
         context: pd.DataFrame,
         columns_to_keep: List[str],
     ) -> str:
-        """
-        Convert the context DataFrame to a JSON string.
-
-        Args:
-            context (pd.DataFrame): The context DataFrame.
-            columns_to_keep (List[str]): The columns to include in the output.
-
-        Returns:
-            str: A JSON string representation of the selected columns.
-        """
         return context[columns_to_keep].to_json(
             orient="records", indent=2, force_ascii=False
         )
