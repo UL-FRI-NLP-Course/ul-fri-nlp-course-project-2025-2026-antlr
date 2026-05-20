@@ -1,0 +1,162 @@
+Testna vprašanja (3. sklop - Gašper K)
+1. Kakšni so minimalni pogoji za ponavljanje 1. letnika?
+2. Ali lahko kot pavzer še vedno opravljam izpite?
+3. Koliko stane opravljanje posameznega izpita, če sem brez statusa študenta?
+4. Kakšni so pogoji za vpis v dodatno leto (absolventa) po končanem 2. letniku magisterskega študija?
+5. Do kdaj najkasneje se moram odjaviti od izpita v sistemu STUDIS, če ugotovim, da nisem dovolj pripravljen, in kaj se zgodi, če se ne odjavim pravočasno?
+6. Kakšen je postopek za uveljavljanje prilagoditev pri opravljanju izpitov za študente s posebnimi potrebami?
+7. Koliko časa imam na voljo za izdelavo diplomskega dela?
+8. Ali lahko zamenjam mentorja za diplomsko delo po tem, ko mi je bila tema že uradno potrjena?
+9. Kdaj ima študentski referat FRI uradne ure za študente?
+10. Kako in kje lahko dobim uradno potrdilo o vpisu ter potrdilo o opravljenih izpitih z žigom fakultete (za potrebe štipendije)?
+
+
+Odgovori: (T: 0.01)
+1. Kakšni so minimalni pogoji za ponavljanje 1. letnika?
+Kontekst:
+Za ponavljanje 1. letnika na Fakulteti za računalništvo in informatiko v Ljubljani (FRI) morate zbrati vsaj 30 kreditnih točk (KT). To pomeni, da morate opraviti vsaj 30 KT izpitov, ki so del predmetnika 1. letnika.
+
+Brez konteksta:
+Minimalni pogoji za ponavljanje 1. letnika na Fakulteti za računalništvo in informatiko v Ljubljani (FRI) so naslednji:
+    Uspešno opravljeni vsi izpiti iz predmetov, ki so bili izvedeni v 1. letniku.
+    Brez neopravljenih obveznosti pri predmetih, ki so bili izvedeni v 1. letniku.
+Če imate kakršna koli dodatna vprašanja ali potrebujete pomoč, mi prosim sporočite.
+
+2. Ali lahko kot pavzer še vedno opravljam izpite?
+Kontekst:
+Da, kot pavzer lahko še vedno opravljate izpite. Vendar pa morate upoštevati naslednje:
+    Prijava na laboratorijske vaje: Pred začetkom študijskega leta se morate prijaviti na laboratorijske vaje pri posameznem predmetu. Prijave so možne od 1. do 26. septembra 2025 v sistemu STUDIS. Če ste študij prekinili za več let in nimate dostopa do sistema STUDIS, pošljite elektronsko sporočilo na referat@fri.uni-lj.si in vam bodo uredili dostop.
+    Plačilo stroškov: Po potrditvi vpisa s strani Študentskega referata boste prejeli račun za plačilo stroškov za laboratorijske vaje. Rok za plačilo za zimski semester je 9. oktober 2025.
+    Pravice in ugodnosti: V času pavziranja nimate statusa rednega študenta in s tem povezanih bonitet, kot so zdravstveno zavarovanje, prehrana, prevoz, delo preko študentske napotnice itd. Zato si morate obvezno zdravstveno zavarovanje urediti sami na Zavodu za zdravstveno zavarovanje na občini stalnega bivališča.
+    Ponavljanje izpitov: Če izpita ne opravljate uspešno, ga lahko ponavljate trikrat. Za ponavljanje se ne šteje ponovno opravljanje izpita na temelju uspešne pritožbe zoper izpitno oceno. V izjemnih primerih lahko zaprositi KŠZ za četrto ponavljanje (peto opravljanje) predmetnega izpita.
+Če potrebujete pomoč pri prijavi ali plačilu, mi sporočite.
+
+Brez konteksta:
+Da, kot pavzer lahko še vedno opravljate izpite, vendar morate upoštevati naslednje:
+    Izpiti za pavzerje: Pavzerji lahko opravljajo izpite, vendar morajo pred tem pridobiti dovoljenje s strani fakultete.
+    Postopek prijave: Za prijavo na izpit se morate obrniti na referat fakultete, kjer boste izpolnili poseben obrazec in plačali prijavnino.
+    Rok za prijavo: Rok za prijavo je običajno 3 dni pred izpitnim rokom.
+    Plačilo prijavnine: Pavzerji morajo plačati prijavnino za vsak izpit, ki ga želijo opravljati.
+    Rok za plačilo: Prijavnino morate plačati v roku, ki je naveden v obrazcu za prijavo.
+    Rok za oddajo obrazca: Obrazec za prijavo morate oddati v referatu fakultete v roku, ki je naveden v obrazcu.
+    Rok za odobritev: Odobritev vaše prijave boste prejeli v roku, ki je naveden v obrazcu.
+    Rok za oddajo izpita: Izpit morate opraviti v roku, ki je naveden v obrazcu.
+Če želite več informacij, se lahko obrnete na referat fakultete.
+
+3. Koliko stane opravljanje posameznega izpita, če sem brez statusa študenta?
+Kontekst:
+Stroške opravljanja posameznega izpita, če ste brez statusa študenta, določa veljavni cenik Univerze v Ljubljani. Študenti, ki so se v študijskem letu 2017/2018 prvič vpisali v katerikoli letnik študijskega programa, morajo upoštevati določila novega Statuta UL, kar pomeni, da lahko posamezni izpit opravljajo največ petkrat. Če ste že bili vpisani v letnik, v katerem opravljate izpit, in ga še niste opravili, ga lahko opravljate v skladu s starim Statutom UL, kar pomeni, da ga lahko opravljate največ šestkrat.
+Račun za opravljanje izpita boste prejeli po vpisu končne ocene v sistem STUDIS, in sicer na elektronski naslov, ki ga ima univerza, ter v sistem STUDIS.
+Za natančno ceno se obrnite na Univerzo v Ljubljani ali Fakulteto za računalništvo in informatiko, kjer lahko najdete veljavni cenik.
+
+Brez konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+4. Kakšni so pogoji za vpis v dodatno leto (absolventa) po končanem 2. letniku magisterskega študija?
+Kontekst:
+Za vpis v dodatno leto (absolventa) po končanem 2. letniku magistrskega študija morate izpolnjevati pogoje, ki so navedeni v študijskem redu UL FRI. Ti pogoji so:
+    Opravljene obveznosti 1. letnika v obsegu najmanj 54 KT.
+    Opravljene obveznosti 2. letnika v obsegu najmanj 54 KT.
+Če ste opravili vse obveznosti 1. in 2. letnika, lahko zaprosite za vpis v dodatno leto (absolventa), ki vam omogoča dokončanje študija v roku 2 let po končanem 2. letniku.
+Za vpis v dodatno leto morate izpolniti vpisni list preko sistema STUDIS, kjer lahko oddate tudi morebitne priloge, kot so potrdila o opravljenih obveznostih ali druge dokumente, ki so potrebni za dokončanje študija.
+Če imate kakršna koli dodatna vprašanja ali potrebujete pomoč pri izpolnjevanju vpisnega lista, se lahko obrnete na študentsko pisarno FRI.
+
+Brez konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+5. Do kdaj najkasneje se moram odjaviti od izpita v sistemu STUDIS, če ugotovim, da nisem dovolj pripravljen, in kaj se zgodi, če se ne odjavim pravočasno?
+Kontekst:
+Do kdaj najkasneje se moram odjaviti od izpita v sistemu STUDIS, če ugotovim, da nisem dovolj pripravljen, in kaj se zgodi, če se ne odjavim pravočasno?
+Rok za odjavo od izpita preko sistema STUDIS je dva dni pred dnevom izpita do 23:59. Če se ne odjavite pravočasno, se šteje, da ste se izpita udeležili, tudi če ga dejansko niste opravljali. Če se ne odjavite in se izpita ne udeležite brez opravičljivega razloga, boste ocenjeni z negativno oceno.
+
+Brez konteksta:
+V sistemu STUDIS se morate odjaviti od izpita najkasneje do 14 dni pred začetkom izpitnega roka. Če se ne odjavite pravočasno, boste morali izpit opravljati, tudi če se ga ne udeležite. V tem primeru se bo vaš rezultat vpisal kot "ne opravljen", kar bo vplivalo na vaš študijski status in morebitne nadaljnje prijave na izpite.
+
+6. Kakšen je postopek za uveljavljanje prilagoditev pri opravljanju izpitov za študente s posebnimi potrebami?
+Kontekst:
+Za uveljavljanje prilagoditev pri opravljanju izpitov za študente s posebnimi potrebami morajo študenti slediti naslednjim korakom:
+    Predložitev prošnje: Študenti morajo preko sistema STUDIS predložiti prošnjo za priznanje statusa študenta s posebnimi potrebami, skupaj z ustreznimi dokazili o težavah oziroma ovirah (npr. izvidi zdravstvene oz. druge ustanove, odločbe o statusih invalidov, mnenja invalidske komisije oziroma komisije za usmerjanje otrok, mladostnikov oziroma mlajših polnoletnih oseb z motnjami v telesnem in duševnem zdravju).
+    Rok za oddajo: Prošnje se lahko oddajo od začetka študijskega leta, od 1. 10. dalje.
+    Postopek obravnave: Prošnje so razrešene na sejah Komisije za študijske zadeve. Predhodno ob oddaji popolne prošnje je študent vabljen na pogovor s koordinatorjem študentov s posebnimi potrebami.
+    Časovni okvir: Celoten proces pridobitve statusa študenta s posebnimi potrebami lahko traja več kot 60 dni.
+    Določitev prilagoditev: Glede na posebne potrebe študenta komisija določi pogoje in olajšave za opravljanje izpitov in študijskih obveznosti študenta.
+    Možne olajšave pri opravljanju izpitov:
+        Podaljšan čas pisnih izpitov
+        Opravljanje tudi ustnega dela izpita v pisni obliki (npr. v primeru slušne prizadetosti)
+Če želite več informacij o specifičnih prilagoditvah ali postopku, mi prosim sporočite.
+
+Brez konteksta:
+Za uveljavljanje prilagoditev pri opravljanju izpitov za študente s posebnimi potrebami na Fakulteti za računalništvo in informatiko v Ljubljani (FRI) sledite naslednjim korakom:
+    Dokumentacija: Poskrbite, da imate veljavno dokumentacijo, ki potrjuje vašo invalidnost ali posebno potrebo (npr. odločbo Zavoda RS za šolstvo ali drugega pristojnega organa).
+    Prijava: Dokumentacijo predložite na Službo za študentske zadeve FRI. To lahko storite osebno ali po pošti.
+    Pregled: Služba za študentske zadeve bo vašo dokumentacijo pregledala in vas obvestila o nadaljnjih korakih.
+    Sestanek: Morda boste povabljeni na sestanek s komisijo za študentske zadeve, kjer boste razpravljali o vaših potrebah in možnih prilagoditvah.
+    Odobritev: Če bo vaša prošnja odobrena, boste prejeli uradno odobritev, ki jo boste morali predložiti izvajalcu izpita.
+    Uporaba prilagoditev: Prilagoditve (npr. podaljšan čas, pisni izpit namesto ustnega, uporaba računalnika itd.) boste lahko uporabljali med izpitnimi roki, za katere ste jih odobrili.
+Če potrebujete pomoč pri iskanju kontaktnih informacij ali obrazcev, mi sporočite.
+
+7. Koliko časa imam na voljo za izdelavo diplomskega dela?
+Kontekst:
+Na podlagi podanega konteksta imate za izdelavo diplomskega dela na voljo 10 mesecev od dneva prijave teme. Ta rok je možno v izjemnih primerih na podlagi utemeljene prošnje podaljšati še za 1 mesec, potem pa vaša tema zapade.
+
+Brez konteksta:
+Na zadeve, ki niso v zvezi s študijem, vam ne morem pomagati.
+
+8. Ali lahko zamenjam mentorja za diplomsko delo po tem, ko mi je bila tema že uradno potrjena?
+Kontekst:
+Da, lahko zamenjate mentorja za diplomsko delo po tem, ko vam je bila tema že uradno potrjena, vendar morate upoštevati naslednje:
+    Obvestite svojega trenutnega mentorja: Preden začnete delati z novim mentorjem, se morate posloviti od svojega trenutnega mentorja.
+    Obvestite Komisijo za študijske zadeve (KŠZ): Če je bila tema že potrjena, morate zaprositi za spremembo mentorja in teme.
+    Nova vloga za prijavo teme: Če je bila tema že potrjena, morate zaprositi za novo temo.
+    Rok za oddajo: Poskrbite, da boste upoštevali vse roke za oddajo, da ne bo prišlo do zamud.
+Za več informacij se obrnite na Komisijo za študijske zadeve (KŠZ) ali na svojega študijskega koordinatorja.
+
+Brez konteksta:
+Da, lahko zamenjate mentorja za diplomsko delo po tem, ko vam je bila tema že uradno potrjena. Vendar pa morate upoštevati naslednje:
+    Predhodno soglasje mentorja: Novi mentor mora biti pripravljen prevzeti vodenje vašega diplomskega dela.
+    Postopek prijave: Za spremembo mentorja morate izpolniti in oddati obrazec za spremembo mentorja na Oddelku za študentske zadeve.
+    Rok: Sprememba mentorja je običajno mogoča do začetka izdelave diplomskega dela, vendar se lahko roki razlikujejo glede na smer študija in razpoložljivost mentorja.
+    Dokumentacija: Poskrbite, da boste imeli vsa potrebna potrdila in podpise od obeh mentorjev.
+Za natančne informacije se posvetujte s svojim študentskim referatom ali preverite najnovejše smernice na spletni strani Fakultete za računalništvo in informatiko v Ljubljani.
+
+9. Kdaj ima študentski referat FRI uradne ure za študente?
+Kontekst:
+Študentski referat FRI ima uradne ure za študente naslednje dni:
+    Ponedeljek: od 10.30 do 12.30 (v pisarni) in od 13.00 do 15.00 (po telefonu)
+    Torek: od 13.00 do 15.00 (po telefonu)
+    Sreda: od 10.30 do 12.30 (v pisarni) in od 13.00 do 15.00 (po telefonu)
+    Četrtek: od 10.30 do 12.30 (v pisarni)
+    Petek: ni uradnih ur
+Za več informacij lahko kontaktirate Študentski referat preko telefona ali elektronske pošte, ki je navedena v uradnih urah.
+
+Brez konteksta:
+Študentski referat FRI ima uradne ure za študente običajno med tednom, vendar se natančen urnik lahko razlikuje glede na semester. Za najnovejše informacije o uradnih urah priporočam, da preverite uradno spletno stran FRI ali se obrnete na študentski referat neposredno. Če potrebujete pomoč pri iskanju teh informacij, mi sporočite.
+
+10. Kako in kje lahko dobim uradno potrdilo o vpisu ter potrdilo o opravljenih izpitih z žigom fakultete (za potrebe štipendije)?
+Kontekst:
+Za pridobitev uradnega potrdila o vpisu in potrdila o opravljenih izpitih z žigom fakultete lahko sledite naslednjim korakom:
+    Potrdilo o vpisu:
+        Potrdilo o vpisu lahko izvozite ali natisnete iz sistema STUDIS (Študentski informacijski sistem Univerze v Ljubljani).
+        Dostop do sistema STUDIS je na voljo preko spletne strani: https://studij.fri.uni-lj.si.
+        Potrdilo je na voljo pod zavihkom NATISNI v sistemu STUDIS.
+    Potrdilo o opravljenih izpitih (Transcript of Records):
+        Potrdilo o opravljenih izpitih lahko prav tako izvozite ali natisnete iz sistema STUDIS.
+        Potrdilo vključuje seznam opravljenih izpitov z ocenami in žigom fakultete.
+        Dostop do potrdila je na voljo pod zavihkom NATISNI v sistemu STUDIS.
+Za dodatna navodila ali pomoč pri dostopu do sistema STUDIS se lahko obrnete na Študentski referat Fakultete za računalništvo in informatiko, Univerza v Ljubljani.
+
+Brez konteksta:
+Za pridobitev uradnega potrdila o vpisu in potrdila o opravljenih izpitih z žigom fakultete (za potrebe štipendije) sledite naslednjim korakom:
+    Potrdilo o vpisu:
+        Potrdilo o vpisu lahko pridobite preko sistema Študent FRI (https://student.fri.uni-lj.si).
+        Po prijavi v sistem pojdite na zavihke "Moji podatki" → "Potrdila" → "Potrdilo o vpisu".
+        Potrdilo lahko natisnete ali prenesete v PDF formatu.
+    Potrdilo o opravljenih izpitih:
+        Potrdilo o opravljenih izpitih lahko prav tako pridobite preko sistema Študent FRI.
+        Po prijavi pojdite na zavihke "Moji podatki" → "Potrdila" → "Potrdilo o opravljenih izpitih".
+        Izberite obdobje (npr. tekoče študijsko leto) in natisnite ali prenesite potrdilo.
+    Žig fakultete:
+        Obe potrdili sta uradni in vsebujeta žig fakultete.
+        Če potrebujete potrdilo z žigom za uradne namene (npr. štipendija), se prepričajte, da je potrdilo natisnjeno ali podpisano s strani pooblaščene osebe na fakulteti.
+Če potrebujete dodatno pomoč, se lahko obrnete na Študentski referat FRI preko e-pošte ali osebno.
+Če potrebujete pomoč pri čem drugem, mi sporočite.
