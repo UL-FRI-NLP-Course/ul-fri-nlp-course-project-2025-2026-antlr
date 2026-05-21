@@ -98,25 +98,7 @@ and an evaluation of the system.
 %----------------------------------------------------------------------------------------
 
 \section*{Introduction}
-%These latex files are intended to serve as a the template for the NLP course at FRI.
-% The template is adapted from the FRI Data Science Project Competition template.
-% If you find mistakes in the template or have problems using it, please consult
-% Jure Demšar (\href{mailto:jure.demsar@fri.uni-lj.si}{jure.demsar@fri.uni-lj.si}).
 
-%In the Introduction section you should write about the relevance of your work
-% (what is the purpose of the project, what will we solve)
-% and about related work (what solutions for the problem already exist).
-% Where appropriate, reference scientific work conducted by other researchers.
-% For example, the work done by Demšar et al. \cite{Demsar2016BalancedMixture}
-% is very important for our project.
-% The abbreviation et al. is for et alia, which in latin means and others,
-% we use this abbreviation when there are more than two authors of the work we are citing.
-% If there are two authors (or if there is a single author) we just write down their surnames.
-%
-% For example, the work done by Demšar and Lebar Bajec \cite{Demsar2017LinguisticEvolution}
-% is also important for successful completion of our project.
-
-% samo:
 Students at university faculties routinely encounter administrative questions:
 How do I enrol in the next academic year? How many times can I take an exam?
 What happens if I miss the enrolment deadline?
@@ -141,11 +123,11 @@ Our system aims to replicate and extend this concept for UL FRI,
 with reproducible code and open dataset.
 
 %gasperk
-To create our dataset, we have gathered data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
-We have used Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we will write 30 questions and evaluate our system on that.
+To create our dataset, we gathered data by scraping the UL FRI website (enrollment info, FAQs) and collecting UL rulebooks and administrative PDFs, which are accessible online.
+We used Microsoft's MarkItDown to convert this data into Markdown for LLM parsing. To create an evaluation corpus, we wrote 31 questions and evaluated our system on them.
 
-The core implementation includes a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We are using the Slovenian GaMS model to process user intents and generate answers.
-For the retrieval pipeline, we have chunked our parsed Markdown documents, generated vector embeddings using BGE-m3 based model\cite{baai3}, and store them in PostgreSQL using the pgvector extension.
+The core implementation includes a Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} architecture. We used the Slovenian GaMS model to process user intents and generate answers.
+For the retrieval pipeline, we chunked our parsed Markdown documents, generated vector embeddings using a BGE-m3 based model \cite{baai3}, and stored them in PostgreSQL using the pgvector extension.
 
 System prompting enforces a ``Student Affairs Advisor'' persona with guardrails against out-of-domain questions and instructions to direct unanswerable queries to the Referat office.
 The system is evaluated by comparing three embedding models on a handcrafted FAQ dataset.
@@ -164,12 +146,12 @@ In practice, these methods are often combined, with RAG \cite{lewis2020retrieval
 
 \subsection*{Existing Solutions}
 There are many existing university chatbot solutions using RAG architecture that differ in used technologies and purpose.
-One example of such system is a chatbot developed for Mississippi State University by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by retriever technique provided by LangChain \cite{langChain} using Maximum Marginal Relevancy and Similarity Search methods. For the underlying LLM, it utilizes OpenAi's gpt-3.5-turbo. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
+One example of such a system is a chatbot developed for Mississippi State University by Neupane et al., which uses BarkPlug v2 \cite{neupane2024questions} architecture. For context retrieval it uses an embedding model for vectorization of external data sources and Chroma DB vector database. Actual context retrieval is done by a retriever technique provided by LangChain \cite{langChain} using Maximum Marginal Relevancy and Similarity Search methods. For the underlying LLM, it utilizes OpenAi's gpt-3.5-turbo. The system achieved a mean RAGAS score of 0.96, and has proven itself to be practical and effective for real-world usage through various qualitative experiments.
 
 Other examples of such chatbots are Meri AI \cite{meriAi} and AceIt-ECE-Capstone \cite{aceIt}. Meri AI \cite{meriAi} is a campus intelligence system, which runs a LangGraph workflow \cite{langChain} for intent classification, route detection, context retrieval, and response generation. It uses Supabase PostgreSQL with pgvector as knowledge database containing content scraped from university resources.
 AceIt-ECE-Capstone \cite{aceIt} is a course assistant focused on study help. It uses RAG \cite{lewis2020retrieval} pipeline where course data is embedded with Amazon Titan Text Embeddings v2 and stored in Amazon RDS PostgreSQL. It uses Llama 3.3 to generate responses based on user query and retrieved database knowledge.
 
-Another example of university chatbot is a virtual AI assistant developed by fakulteta za strojništvo of University of Ljubljana. Unfortunately, it seems that there is no publicly available information about its architecture and even when asked the bot itself, it was unable to answer it accurately. It was, however, able to explain that the data used to provide user query with relevant context comes from UL FS webpage and standard Q\&A entries.
+Another example of a university chatbot is a virtual AI assistant developed by the Faculty of Mechanical Engineering (Fakulteta za strojništvo) at the University of Ljubljana. Unfortunately, it seems that there is no publicly available information about its architecture and even when asked the bot itself, it was unable to answer it accurately. It was, however, able to explain that the data used to provide user query with relevant context comes from UL FS webpage and standard Q\&A entries.
 
 
 %------------------------------------------------
@@ -177,7 +159,7 @@ Another example of university chatbot is a virtual AI assistant developed by fak
 \section*{Methods}
 
 \subsection*{Dataset}
-For the purpose of this project we first curated a dataset. This was done by scraping 427 HTML pages from UL FRI websites and collecting 33 official PDF rulebooks.
+For the purpose of this project, we first curated a dataset. This was done by scraping 427 HTML pages from UL FRI websites and collecting 33 official PDF rulebooks.
 Using Microsoft's \textbf{MarkItDown}, we converted these into Markdown. Next, we performed data sanitization by removing HTML navigation menus, stripping standalone hyperlinks, resolving PDF layout artifacts (e.g., mid-sentence line breaks), and collapsing whitespace.
 The final, cleaned corpus contains approximately 500,000 words of relevant administrative text.
 
@@ -207,7 +189,7 @@ based on the question asked and the context from
 the knowledge base.
 
 # Guidelines:
-1. Respond in the user’s language.
+1. Respond in the user's language.
 2. Use only information from
    the provided context.
 4. Be transparent when there is not enough
@@ -233,7 +215,7 @@ The online path (left to right) covers query handling: the user's message travel
 
 \section*{Results}
 
-The final implementation results in a functional web-based conversational assistant.
+The final implementation resulted in a functional web-based conversational assistant.
 Figure \ref{fig:ui_landing} shows the initial user interface with suggested questions,
 while Figure \ref{fig:ui_chat} demonstrates a successful retrieval and synthesis cycle where the bot correctly answers a query regarding year repetition requirements.
 
@@ -279,26 +261,93 @@ Despite identical accuracy, gemma-embedding-300m requires HuggingFace authentica
 whereas bge-m3 is publicly available without login, simplifying deployment and community testing.
 No significant latency difference was observed between the two despite bge-m3's higher
 dimensionality (1024 vs.\ 768), so we selected \textbf{BAAI/bge-m3} for the final system.
-% %------------------------------------------------
+
+\subsection*{RAG vs. Vanilla LLM Evaluation}
+
+To quantify the RAG pipeline's effectiveness, we evaluated the GaMS-9B model against a standalone "Vanilla" LLM baseline using a dataset of 20 domain-specific student queries.
+The RAG-enabled model achieved a manual correctness score of 19/20, vastly outperforming the Vanilla LLM's 4.5/20.
+Qualitative analysis highlighted several Vanilla LLM failure modes that our architecture resolved:  
+
+\begin{itemize}
+    \item \textbf{System Hallucinations \& Program Confusion:} The Vanilla LLM frequently invented IT systems (e.g., "e-Študent", fake URLs) and fabricated program names (e.g., "informatika in mediji" for IŠRM). The RAG system correctly identified STUDIS and exact degree requirements.
+    \item \textbf{Regulatory Inaccuracies:} Without context, the model hallucinated rules, such as a 14-day exam deregistration deadline and a requirement to pass all exams to repeat a year. RAG accurately retrieved the actual 2-day deadline and the 30 ECTS requirement.
+    \item \textbf{False Refusals:} For highly specific factual questions (e.g., naming AI thesis mentors or exam costs), the Vanilla LLM triggered out-of-domain refusal guardrails while the RAG system successfully answered these queries.
+    \item \textbf{Conversational Memory:} To support multi-turn dialogues, we also implemented an LLM-driven query-rewriting step prior to vector retrieval. Evaluation showed the system successfully maintained context across complex, multi-turn follow-up questions.
+\end{itemize}
+
+These results confirm that while the base model possesses strong linguistic capabilities, the RAG architecture is essential for grounding responses in factual, institution-specific knowledge.
 
 \section*{Discussion}
 Our implementation of ReferatBot demonstrates that a localized RAG pipeline is highly effective for Slovenian academic administration.
-However, several areas for improvement remain.
-
-
-% %------------------------------------------------
-
-% \section*{Acknowledgments}
-
-% Here you can thank other persons (advisors, colleagues ...) that contributed to the successful completion of your project.
-
+However, several areas for improvement remain. The system currently relies on scraped Markdown data; establishing an automated synchronization pipeline with the faculty's official content management system would ensure regulations are strictly up to date. Furthermore, exploring smaller, highly quantized models for the query-rewriting step could further reduce response latency while maintaining conversational context.
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 \bibliographystyle{unsrt}
-
 \bibliography{report}
 
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES
+%----------------------------------------------------------------------------------------
+\appendix
+
+\section*{Appendix A: Embedding Evaluation Dataset}
+\label{app:embedding_dataset}
+
+Table \ref{tab:appendix_questions} lists the 11 handcrafted questions used to evaluate the retrieval accuracy of the three embedding models discussed in the Results section. The full dataset used for the RAG vs. Vanilla LLM evaluation, including manual annotations and failure mode logs, is publicly available in the project repository.
+
+\begin{table}[H]
+    \caption{Questions used for the embedding model comparison.}
+    \centering
+    \begin{tabular}{p{0.05\linewidth} p{0.9\linewidth}}
+        \toprule
+        \textbf{\#} & \textbf{Question} \\
+        \midrule
+        1 & According to the instructions for the Master's thesis at UL FRI, how many ECTS credits is the thesis worth, and approximately how many hours of work does this represent? \\
+        2 & What is the required duration for the oral presentation during a Master's thesis defense at UL FRI? \\
+        3 & To complete a doctoral program at UL FRI, what specific requirement must be met regarding scientific publications before submitting the dissertation for evaluation? \\
+        4 & What is the minimum number of credits (ECTS) a doctoral student must complete to advance from the first to the second year of study? \\
+        5 & Under what condition can a student apply for an extension of their student status due to health reasons according to the enrollment regulations? \\
+        6 & What are the guidelines regarding the use of Generative AI (e.g., ChatGPT) in the preparation of a Master's thesis at FRI? \\
+        7 & Which of the following is a criterion for a doctoral student to be awarded the 'cum laude' (with honors) distinction upon completion? \\
+        8 & What is the purpose of 'Seminar 5' in the doctoral study process at FRI? \\
+        9 & For first-cycle (Bachelor's) students, who must be included in the Commission for evaluation and defense? \\
+        10 & In the context of language rules for a Master's thesis at FRI, what is required if a student is granted permission to write the thesis in English? \\
+        11 & What are the rules regarding the citation of AI tools in academic work at the University of Ljubljana? \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:appendix_questions}
+\end{table}
+
+\section*{Appendix B: Conversational Memory Demonstration}
+\label{app:memory_transcript}
+
+To demonstrate the effectiveness of the query-rewriting module, the following transcript illustrates a multi-turn conversation. The user frequently omits the primary subject (e.g., "Student Affairs Office", "thesis") in follow-up questions, yet the system successfully maintains the conversational thread and retrieves the correct context.
+
+\begin{description}[style=nextline]
+    \item[User:] Kje se nahaja referat?
+    \item[ReferatBot:] Študentski referat se nahaja v prostoru R1.03 na Fakulteti za računalništvo in informatiko v Ljubljani...
+    
+    \item[User:] Kdaj so odprti?
+    \item[ReferatBot:] Študentski referat je odprt od ponedeljka do petka, od 9:00 do 12:00 in od 13:00 do 15:00...
+    
+    \item[User:] A jih lahko kontaktiram kadarkoli?
+    \item[ReferatBot:] Ne, ne morete jih kontaktirati kadarkoli. Študentski referat je odprt od ponedeljka do petka...
+    
+    \item[User:] Koliko časa imam na voljo za izdelavo diplomskega dela?
+    \item[ReferatBot:] Na podlagi navedenega konteksta imate na voljo 10 mesecev časa za izdelavo diplomskega dela od dneva prijave v študijskem informacijskem sistemu...
+    
+    \item[User:] Kaj pa za magistrsko delo?
+    \item[ReferatBot:] Na podlagi navedenega konteksta imate za izdelavo magistrskega dela čas do 30. oktobra...
+    
+    \item[User:] Kaj pa če ne naredim do takrat?
+    \item[ReferatBot:] Če ne oddate diplomskega dela do določenega roka, imate dve možnosti: Prošnja za podaljšanje roka... ali Ponovna prijava teme...
+    
+    \item[User:] A je isto za magisterij?
+    \item[ReferatBot:] Da, pravila za magistrsko delo so podobna kot za diplomsko delo. Če ne oddate magistrskega dela do določenega roka, imate dve možnosti...
+\end{description}
 
 \end{document}
