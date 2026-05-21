@@ -262,17 +262,16 @@ whereas bge-m3 is publicly available without login, simplifying deployment and c
 No significant latency difference was observed between the two despite bge-m3's higher
 dimensionality (1024 vs.\ 768), so we selected \textbf{BAAI/bge-m3} for the final system.
 
+To support multi-turn dialogues, we also implemented an LLM-driven query-rewriting step prior to vector retrieval. Evaluation showed the system successfully maintained context across multi-turn follow-up questions.
+
 \subsection*{RAG vs. Vanilla LLM Evaluation}
 
-To quantify the RAG pipeline's effectiveness, we evaluated the GaMS-9B model against a standalone "Vanilla" LLM baseline using a dataset of 20 domain-specific student queries.
-The RAG-enabled model achieved a manual correctness score of 19/20, vastly outperforming the Vanilla LLM's 4.5/20.
-Qualitative analysis highlighted several Vanilla LLM failure modes that our architecture resolved:  
+To quantify the RAG pipeline's effectiveness, we evaluated the GaMS-9B model against a standalone "Vanilla" LLM baseline using a dataset of 20 domain-specific student queries. The RAG-enabled model achieved a manual correctness score of 19/20, vastly outperforming the Vanilla LLM's 4.5/20. Qualitative analysis highlighted several Vanilla LLM failure modes that our architecture resolved:  
 
 \begin{itemize}
-    \item \textbf{System Hallucinations \& Program Confusion:} The Vanilla LLM frequently invented IT systems (e.g., "e-Študent", fake URLs) and fabricated program names (e.g., "informatika in mediji" for IŠRM). The RAG system correctly identified STUDIS and exact degree requirements.
-    \item \textbf{Regulatory Inaccuracies:} Without context, the model hallucinated rules, such as a 14-day exam deregistration deadline and a requirement to pass all exams to repeat a year. RAG accurately retrieved the actual 2-day deadline and the 30 ECTS requirement.
+    \item \textbf{System Hallucinations \& Program Confusion:} The Vanilla LLM frequently invented IT systems (e.g., "e-Študent", fake URLs) and fabricated program names (e.g., "informatika in mediji" for IŠRM). The RAG system correctly identified STUDIS and exact degree requirements.  
+    \item \textbf{Regulatory Inaccuracies:} Without context, the model hallucinated rules, such as a 14-day exam deregistration deadline and a requirement to pass all exams to repeat a year. RAG accurately retrieved the actual 2-day deadline and the 30 ECTS requirement.  
     \item \textbf{False Refusals:} For highly specific factual questions (e.g., naming AI thesis mentors or exam costs), the Vanilla LLM triggered out-of-domain refusal guardrails while the RAG system successfully answered these queries.
-    \item \textbf{Conversational Memory:} To support multi-turn dialogues, we also implemented an LLM-driven query-rewriting step prior to vector retrieval. Evaluation showed the system successfully maintained context across complex, multi-turn follow-up questions.
 \end{itemize}
 
 These results confirm that while the base model possesses strong linguistic capabilities, the RAG architecture is essential for grounding responses in factual, institution-specific knowledge.
