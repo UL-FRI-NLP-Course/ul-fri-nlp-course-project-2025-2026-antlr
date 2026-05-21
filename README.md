@@ -19,7 +19,7 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 
 ## Install and run
 
-Clone the repo in a fresh new folder and then please run the script
+Clone the repo on the HPC cluster in a fresh new folder and then please run the script
 
 ```bash
 sbatch run.sh
@@ -55,13 +55,17 @@ Running server on 0.0.0.0:8080
 ```
 
 you are ready to go.
-Open a new **local* terminal on your machine and copy the tunnel command *from the logs*:
+Open a new *local* terminal on your machine and copy the tunnel command *from the logs*:
 ```bash
 ssh -L 8080:wnNodeNumber.arnes.si:8080 username@hpc-login.arnes.si  # Make sure to copy command from the log, not from here!
 ```
 If you are using Windows, you can use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or [MobaXterm](https://mobaxterm.mobatek.net/) to create the tunnel.
 
 After that command navigate to http://localhost:8080 to access the chatbot interface (make sure that uvicorn server has started on the HPC).
+
+
+> Note: if you'd like to run this on your own machine (experimental), please install `apptainer`,
+then run `./run.sh`. You don't need to open a tunnel to connect to localhost then.
 
 [Zaslonski_video_20260428_180534.webm](https://github.com/user-attachments/assets/f1a1b2a2-4ad5-4d21-a416-f5881379a9d8)
 
