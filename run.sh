@@ -47,9 +47,10 @@ if [ "$(ls -A "$PERM_DATA")" ]; then
 fi
 
 # Ensure image is present
-if [ ! -f "timescaledb.sif" ]; then
+if [ ! -f "timescaledb" ]; then
     echo -e "[${log_label}] Pulling TimescaleDB image..."
-    apptainer pull timescaledb.sif docker://timescale/timescaledb:latest-pg16
+    apptainer build --sandbox timescaledb docker://timescale/timescaledb:latest-pg16
+    #apptainer pull timescaledb.sif docker://timescale/timescaledb:latest-pg16
 fi
 
 # Check if .env file exists, otherwise
@@ -71,7 +72,7 @@ apptainer run \
     --env POSTGRES_DB=$DB_NAME \
     --env POSTGRES_PASSWORD=$DB_PASS \
     --env POSTGRES_USER=$DB_USER \
-    timescaledb.sif \
+    timescaledb \
     -c unix_socket_directories='/var/run/postgresql' \
     -c shared_buffers=1GB \
     -c max_connections=20 \
@@ -80,7 +81,7 @@ apptainer run \
 
 # Wait for it to be ready
 echo -e "[${log_label}] Waiting for Postgres to start up ..."
-until apptainer exec timescaledb.sif pg_isready -h localhost -U postgres; do
+until apptainer exec timescaledb pg_isready -h localhost -U postgres; do
     sleep 2
 done
 echo ""
@@ -127,7 +128,7 @@ fi
 source .venv/bin/activate
 
 # Install extensions
-apptainer exec timescaledb.sif psql -h localhost -U postgres -d $DB_NAME -c "CREATE EXTENSION IF NOT EXISTS vector; CREATE EXTENSION IF NOT EXISTS timescaledb;"
+apptainer exec timescaledb psql -h localhost -U postgres -d $DB_NAME -c "CREATE EXTENSION IF NOT EXISTS vector; CREATE EXTENSION IF NOT EXISTS timescaledb;"
 
 # Run Fill Script if required
 if [ "$RUN_INSERT" = true ]; then
@@ -171,7 +172,7 @@ python src/rag/app/server.py --port $PORT
 # SHUTDOWN AND PERSIST
 echo -e "[${log_label}] Shutting down Postgres cleanly..."
 # Using pg_ctl stop ensures all data is flushed to disk before we copy it
-apptainer exec timescaledb.sif pg_ctl -D /var/lib/postgresql/data stop
+apptainer exec timescaledb pg_ctl -D /var/lib/postgresql/data stop
 
 echo -e "[${log_label}] Syncing data from /tmp back to permanent storage ($PERM_DATA)..."
 # Use rsync or cp to move the updated files back to home
