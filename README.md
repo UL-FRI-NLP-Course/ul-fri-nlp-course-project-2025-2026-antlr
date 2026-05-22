@@ -3,6 +3,8 @@
 
 > A RAG-based chatbot that answers student administrative questions for the UL FRI Student Affairs Office (Referat), serving enrolled students.
 
+Final report can be found [here](./report/report-3.pdf)
+
 ---
 
 ## Project Overview
