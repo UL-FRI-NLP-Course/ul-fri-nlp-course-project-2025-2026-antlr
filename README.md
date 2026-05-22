@@ -26,6 +26,7 @@ Clone the repo on the HPC cluster in a fresh new folder and then please run the 
 ```bash
 sbatch run.sh
 tail -f logs/db_log.log
+# Now go get a coffe. Perhaps lunch. First run will take a while, due to database generateion, .venv creation and installation of dependencies.
 ```
 
 Once you see the following text appear:
