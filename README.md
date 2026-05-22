@@ -20,6 +20,7 @@ General-purpose LLMs hallucinate when asked institution-specific questions they 
 
 
 ## Install and run
+**Prerequisite:** This project has been tested and is confirmed to work with Python 3.9. Please ensure your environment uses this version to avoid dependency conflicts.
 
 Clone the repo on the HPC cluster in a fresh new folder and then please run the script
 
