@@ -18,7 +18,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \documentclass[fleqn,moreauthors,10pt]{ds_report}
-\usepackage[slovene]{babel}
+\usepackage[english,slovene]{babel}
+\selectlanguage{english}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
@@ -28,6 +29,12 @@
 \graphicspath{{fig/}}
 \usepackage{listings}
 \usepackage{fvextra}
+
+\addto\captionsslovene{
+    \renewcommand{\figurename}{Figure}
+    \renewcommand{\abstractname}{Abstract}
+    \renewcommand{\refname}{References}
+}
 
 \lstset{
     extendedchars=true,
